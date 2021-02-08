@@ -174,6 +174,34 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Project>{130F9AC2-57DE-33DA-AACE-2C9C17CCEF6F}</Project>
       <Name>FlappyBird</Name>
     </ProjectReference>
+    <ProjectReference Include="D:\FlappyBird\TYRANT\TYRANT.vcxproj">
+      <Project>{46CDC837-48B0-3323-AC5C-C7EC2DB1A125}</Project>
+      <Name>TYRANT</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FlappyBird\TYRANT\vendor\sflm\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{3EA8CFC3-CA69-3B1A-BF91-994BE694ACA0}</Project>
+      <Name>sfml-audio</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FlappyBird\TYRANT\vendor\sflm\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{6A5BEC07-4F4D-3712-972F-9DFDBE9C3140}</Project>
+      <Name>sfml-graphics</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FlappyBird\TYRANT\vendor\sflm\src\SFML\Main\sfml-main.vcxproj">
+      <Project>{A65D1DC9-6EA9-342C-90F9-18AE90D21323}</Project>
+      <Name>sfml-main</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FlappyBird\TYRANT\vendor\sflm\src\SFML\Network\sfml-network.vcxproj">
+      <Project>{88A20D25-5DFF-316B-9461-0138F21EC9B2}</Project>
+      <Name>sfml-network</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FlappyBird\TYRANT\vendor\sflm\src\SFML\System\sfml-system.vcxproj">
+      <Project>{8DFA16D0-6424-3F7C-AB18-90361D324F0B}</Project>
+      <Name>sfml-system</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\FlappyBird\TYRANT\vendor\sflm\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{650CB2BF-3352-3DD3-8C78-0A402955ECBB}</Project>
+      <Name>sfml-window</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

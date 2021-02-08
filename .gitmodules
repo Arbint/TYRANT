@@ -1,0 +1,3 @@
+[submodule "TYRANT/vendor/sflm"]
+	path = TYRANT/vendor/sflm
+	url = https://github.com/SFML/SFML.git
