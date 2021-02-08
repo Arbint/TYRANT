@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\FlappyBird\CMakeFiles\fa952b075d0ff851c2a262c83c51dc06\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{CD95576B-F6DC-3CA6-A66C-0C5C4C4DEA27}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>
