@@ -1,29 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\FlappyBird\TYRANT\src\tyrant.cpp">
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\Application.cpp" />
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\tyrant.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Level.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\FlappyBird\TYRANT\include\TyrantCore.h">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Application.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\FlappyBird\TYRANT\include\tyrant.h">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\TyrantCore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="include\Application.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\tyrant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="include\Level.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\FlappyBird\TYRANT\CMakeLists.txt" />
+    <CustomBuild Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{63E7E7F6-12BF-3C61-9501-C33FA7984DE9}</UniqueIdentifier>
+      <UniqueIdentifier>{203DE1A1-5DCD-389C-86A2-5ED68794542C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{FCC4C5A2-F8F5-3D37-9ACD-300C46DF1996}</UniqueIdentifier>
+      <UniqueIdentifier>{C51C9010-2881-357B-9CC9-CC5295C98F65}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

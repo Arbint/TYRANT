@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{46CDC837-48B0-3323-AC5C-C7EC2DB1A125}</ProjectGuid>
+    <ProjectGuid>{56C73E1C-389A-3BB4-BBAE-F09ADCE7927A}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\FlappyBird\TYRANT\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TYRANT.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TYRANT</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\FlappyBird\TYRANT\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TYRANT.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TYRANT</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\FlappyBird\TYRANT\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TYRANT.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TYRANT</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\FlappyBird\TYRANT\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TYRANT.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TYRANT</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -102,10 +102,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;TYRANT_DLL_EXP;CMAKE_INTDIR=\"Debug\";TYRANT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -116,7 +116,7 @@
       <Message>
       </Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/FlappyBird/TYRANT/Debug D:/FlappyBird/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/Debug C:/dev/TyrantDev/TYRANT/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -125,7 +125,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/FlappyBird/TYRANT/vendor/sflm/lib/Debug D:/FlappyBird/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/vendor/sflm/lib/Debug C:/dev/TyrantDev/TYRANT/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -140,8 +140,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/FlappyBird/TYRANT/Debug/TYRANT.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/FlappyBird/TYRANT/Debug/TYRANT.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/dev/TyrantDev/TYRANT/TYRANT/Debug/TYRANT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/TyrantDev/TYRANT/TYRANT/Debug/TYRANT.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -150,7 +150,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -166,10 +166,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TYRANT_DLL_EXP;CMAKE_INTDIR=\"Release\";TYRANT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -180,7 +180,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message>
       </Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/FlappyBird/TYRANT/Release D:/FlappyBird/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/Release C:/dev/TyrantDev/TYRANT/Release
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -189,7 +189,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/FlappyBird/TYRANT/vendor/sflm/lib/Release D:/FlappyBird/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/vendor/sflm/lib/Release C:/dev/TyrantDev/TYRANT/Release
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -204,8 +204,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/FlappyBird/TYRANT/Release/TYRANT.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/FlappyBird/TYRANT/Release/TYRANT.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/dev/TyrantDev/TYRANT/TYRANT/Release/TYRANT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/TyrantDev/TYRANT/TYRANT/Release/TYRANT.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -214,7 +214,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -230,10 +230,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TYRANT_DLL_EXP;CMAKE_INTDIR=\"MinSizeRel\";TYRANT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -244,7 +244,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message>
       </Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/FlappyBird/TYRANT/MinSizeRel D:/FlappyBird/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/MinSizeRel C:/dev/TyrantDev/TYRANT/MinSizeRel
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -253,7 +253,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/FlappyBird/TYRANT/vendor/sflm/lib/MinSizeRel D:/FlappyBird/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/vendor/sflm/lib/MinSizeRel C:/dev/TyrantDev/TYRANT/MinSizeRel
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -268,8 +268,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/FlappyBird/TYRANT/MinSizeRel/TYRANT.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/FlappyBird/TYRANT/MinSizeRel/TYRANT.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/dev/TyrantDev/TYRANT/TYRANT/MinSizeRel/TYRANT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/TyrantDev/TYRANT/TYRANT/MinSizeRel/TYRANT.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -278,7 +278,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -293,10 +293,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TYRANT_DLL_EXP;CMAKE_INTDIR=\"RelWithDebInfo\";TYRANT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>D:\FlappyBird\TYRANT\include;D:\FlappyBird\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -307,7 +307,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Message>
       </Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/FlappyBird/TYRANT/RelWithDebInfo D:/FlappyBird/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/RelWithDebInfo C:/dev/TyrantDev/TYRANT/RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -316,7 +316,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory D:/FlappyBird/TYRANT/vendor/sflm/lib/RelWithDebInfo D:/FlappyBird/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/vendor/sflm/lib/RelWithDebInfo C:/dev/TyrantDev/TYRANT/RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -331,8 +331,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>D:/FlappyBird/TYRANT/RelWithDebInfo/TYRANT.lib</ImportLibrary>
-      <ProgramDataBaseFile>D:/FlappyBird/TYRANT/RelWithDebInfo/TYRANT.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/dev/TyrantDev/TYRANT/TYRANT/RelWithDebInfo/TYRANT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/TyrantDev/TYRANT/TYRANT/RelWithDebInfo/TYRANT.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -340,11 +340,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\FlappyBird\TYRANT\CMakeLists.txt">
+    <CustomBuild Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeLists.txt">
       <StdOutEncoding>UTF-8</StdOutEncoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/FlappyBird/TYRANT/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/dev/TyrantDev/TYRANT/TYRANT/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/FlappyBird -BD:/FlappyBird --check-stamp-file D:/FlappyBird/TYRANT/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dev/TyrantDev/TYRANT -BC:/dev/TyrantDev/TYRANT --check-stamp-file C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -353,11 +353,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\FlappyBird\TYRANT\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/FlappyBird/TYRANT/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/dev/TyrantDev/TYRANT/TYRANT/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/FlappyBird -BD:/FlappyBird --check-stamp-file D:/FlappyBird/TYRANT/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dev/TyrantDev/TYRANT -BC:/dev/TyrantDev/TYRANT --check-stamp-file C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -366,11 +366,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\FlappyBird\TYRANT\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/FlappyBird/TYRANT/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/dev/TyrantDev/TYRANT/TYRANT/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/FlappyBird -BD:/FlappyBird --check-stamp-file D:/FlappyBird/TYRANT/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dev/TyrantDev/TYRANT -BC:/dev/TyrantDev/TYRANT --check-stamp-file C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -379,11 +379,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\FlappyBird\TYRANT\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/FlappyBird/TYRANT/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/dev/TyrantDev/TYRANT/TYRANT/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SD:/FlappyBird -BD:/FlappyBird --check-stamp-file D:/FlappyBird/TYRANT/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dev/TyrantDev/TYRANT -BC:/dev/TyrantDev/TYRANT --check-stamp-file C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -392,42 +392,44 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\FlappyBird\TYRANT\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="src\Application.cpp" />
-    <ClInclude Include="D:\FlappyBird\TYRANT\include\TyrantCore.h" />
-    <ClInclude Include="D:\FlappyBird\TYRANT\include\tyrant.h" />
-    <ClCompile Include="D:\FlappyBird\TYRANT\src\tyrant.cpp" />
-    <ClInclude Include="include\Application.h" />
+    <ClCompile Include="src\Level.cpp" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Application.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\TyrantCore.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\tyrant.h" />
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\Application.cpp" />
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\tyrant.cpp" />
+    <ClInclude Include="include\Level.h" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="D:\FlappyBird\ZERO_CHECK.vcxproj">
-      <Project>{B0FFAD7E-8B31-3B1F-A9C7-658DAD99F384}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\ZERO_CHECK.vcxproj">
+      <Project>{111AA894-67C6-35F2-B30F-D23DFAA359B6}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="D:\FlappyBird\TYRANT\vendor\sflm\src\SFML\Audio\sfml-audio.vcxproj">
-      <Project>{3EA8CFC3-CA69-3B1A-BF91-994BE694ACA0}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{EA9361F6-24FA-364F-884E-9C7B9F9ECA2B}</Project>
       <Name>sfml-audio</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\FlappyBird\TYRANT\vendor\sflm\src\SFML\Graphics\sfml-graphics.vcxproj">
-      <Project>{6A5BEC07-4F4D-3712-972F-9DFDBE9C3140}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{FA9CBFFE-648E-310F-944A-AD9925BDCE0C}</Project>
       <Name>sfml-graphics</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\FlappyBird\TYRANT\vendor\sflm\src\SFML\Network\sfml-network.vcxproj">
-      <Project>{88A20D25-5DFF-316B-9461-0138F21EC9B2}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\src\SFML\Network\sfml-network.vcxproj">
+      <Project>{F817AB04-6282-390F-80EE-ED99B5737B17}</Project>
       <Name>sfml-network</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\FlappyBird\TYRANT\vendor\sflm\src\SFML\System\sfml-system.vcxproj">
-      <Project>{8DFA16D0-6424-3F7C-AB18-90361D324F0B}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\src\SFML\System\sfml-system.vcxproj">
+      <Project>{DEC020DF-8DCB-334A-A0F7-3D1589CDB655}</Project>
       <Name>sfml-system</Name>
     </ProjectReference>
-    <ProjectReference Include="D:\FlappyBird\TYRANT\vendor\sflm\src\SFML\Window\sfml-window.vcxproj">
-      <Project>{650CB2BF-3352-3DD3-8C78-0A402955ECBB}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{C74E15EA-864D-3DE2-B7C3-1522B97CFE8A}</Project>
       <Name>sfml-window</Name>
     </ProjectReference>
   </ItemGroup>

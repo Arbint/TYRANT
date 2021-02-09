@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\FlappyBird\CMakeFiles\3683e61630fa17900d82c38561cb54c9\INSTALL_force.rule">
+    <CustomBuild Include="C:\dev\TyrantDev\TYRANT\CMakeFiles\50f2bba3d0c45aa91b000b3a8a558e8e\INSTALL_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{CD95576B-F6DC-3CA6-A66C-0C5C4C4DEA27}</UniqueIdentifier>
+      <UniqueIdentifier>{AC02D843-2B20-38CA-9931-0976BCDE1E82}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

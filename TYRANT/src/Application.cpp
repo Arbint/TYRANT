@@ -1,4 +1,7 @@
+#include "..\include\Application.h"
+#include "..\include\Application.h"
 #include <Application.h>
+#include <Level.h>
 namespace ty
 {
 	Application::Application(int width, int height, const std::string& title)
@@ -11,30 +14,53 @@ namespace ty
 		{
 			delete m_window;
 		}
+		UnLoadCurrentLevel();
 	}
 	void Application::Run()
 	{
-		BeginPlay();
+
+		float previousFrameTime = m_clock.getElapsedTime().asSeconds();
 		if (m_window)
 		{
 			while (m_window->isOpen())
 			{
+				float currentTime = m_clock.getElapsedTime().asSeconds();
+				float DeltaTime = currentTime - previousFrameTime;
+				previousFrameTime = currentTime;
+
 				sf::Event event;
 				m_window->pollEvent(event);
 				if (event.type == sf::Event::Closed)
 				{
 					m_window->close();
 				}
-				Tick(0.1);
+				
+				Tick(DeltaTime);
 			}
 		}
 	}
-	void Application::BeginPlay()
-	{
-	}
+
 	void Application::Tick(float DeltaTime)
 	{
+		if (m_CurrentLevel)
+		{
+			m_CurrentLevel->Tick(DeltaTime);
+		}
 		m_window->clear();
 		m_window->display();
+	}
+	void Application::LoadLevel(Level* newLevel)
+	{
+		UnLoadCurrentLevel();
+		m_CurrentLevel = newLevel;
+		Run();
+	}
+	void Application::UnLoadCurrentLevel()
+	{
+		if (m_CurrentLevel)
+		{
+			delete m_CurrentLevel;
+			m_CurrentLevel = nullptr;
+		}
 	}
 }
