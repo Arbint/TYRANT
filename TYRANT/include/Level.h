@@ -6,11 +6,12 @@ namespace ty
 	class TYRANT_API Level
 	{
 	public:
-		Level(class Application* app);
+		Level(class Application* App);
 		virtual void BeginPlay();
 		virtual void Tick(float DeltaTime);
+		const sf::Sprite& GetBackground() const { return m_Background; }
 	private:
-		sf::Sprite m_Background;
 		class Application* m_app;
+		sf::Sprite m_Background;
 	};
 }

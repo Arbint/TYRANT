@@ -1,11 +1,16 @@
 #include "..\include\Application.h"
 #include "..\include\Application.h"
+#include "..\include\Application.h"
+#include "..\include\Application.h"
+#include "..\include\Application.h"
 #include <Application.h>
 #include <Level.h>
 namespace ty
 {
 	Application::Application(int width, int height, const std::string& title)
-		: m_window(new sf::RenderWindow(sf::VideoMode(width, height), title))
+		: m_window(new sf::RenderWindow(sf::VideoMode(width, height), title)),
+		m_CurrentLevel(nullptr)
+
 	{
 	}
 	Application::~Application()
@@ -18,6 +23,10 @@ namespace ty
 	}
 	void Application::Run()
 	{
+		if (m_CurrentLevel)
+		{
+			m_CurrentLevel->BeginPlay();
+		}
 
 		float previousFrameTime = m_clock.getElapsedTime().asSeconds();
 		if (m_window)
@@ -42,12 +51,21 @@ namespace ty
 
 	void Application::Tick(float DeltaTime)
 	{
+		TickLevel(DeltaTime);
+
+		m_window->clear();
+		if (m_CurrentLevel)
+		{
+			m_window->draw(m_CurrentLevel->GetBackground());
+		}
+		m_window->display();
+	}
+	void Application::TickLevel(float DeltaTime)
+	{
 		if (m_CurrentLevel)
 		{
 			m_CurrentLevel->Tick(DeltaTime);
 		}
-		m_window->clear();
-		m_window->display();
 	}
 	void Application::LoadLevel(Level* newLevel)
 	{
@@ -55,6 +73,20 @@ namespace ty
 		m_CurrentLevel = newLevel;
 		Run();
 	}
+
+	const sf::Texture& Application::LoadTexture(const std::string& name)
+	{
+		if (m_textureAssets.find(name) == m_textureAssets.end())
+		{
+			sf::Texture tx;
+			if (tx.loadFromFile("Resources/textures/"+name))
+			{
+				m_textureAssets[name] = tx;
+			}
+		}
+		return m_textureAssets[name];
+	}
+	
 	void Application::UnLoadCurrentLevel()
 	{
 		if (m_CurrentLevel)
