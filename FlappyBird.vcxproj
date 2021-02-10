@@ -341,6 +341,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/CMakeFiles/FlappyBird.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/FlappyBird.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
+    <ClCompile Include="FlappyBird\src\Pipe.cpp" />
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\Bird.h" />
     <ClCompile Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\FlappyBirdApp.cpp">
       <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/CMakeFiles/FlappyBird.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
@@ -403,6 +404,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\CMakeFiles\FlappyBird.dir\Release\cmake_pch.hxx" />
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\CMakeFiles\FlappyBird.dir\MinSizeRel\cmake_pch.hxx" />
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\CMakeFiles\FlappyBird.dir\RelWithDebInfo\cmake_pch.hxx" />
+    <ClInclude Include="FlappyBird\src\Pipe.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\dev\TyrantDev\TYRANT\ZERO_CHECK.vcxproj">

@@ -49,6 +49,11 @@ namespace ty
 		m_Visual.move(moveAmt);
 	}
 
+	void Entity::SetLocation(const sf::Vector2f& Loc)
+	{
+		GetVisual().setPosition(Loc);
+	}
+
 	Level* Entity::GetLevel()
 	{
 		return m_Level;

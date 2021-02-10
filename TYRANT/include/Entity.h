@@ -17,6 +17,7 @@ namespace ty
 		virtual void Tick(float DeltaTime);
 		void SetVisual(const std::string& visualName);
 		void Move(const sf::Vector2f& moveAmt);
+		void SetLocation(const sf::Vector2f& Loc);
 		sf::Sprite& GetVisual() { return m_Visual; }
 		class Level* GetLevel();
 		class Application* GetApp() { return m_app; }
