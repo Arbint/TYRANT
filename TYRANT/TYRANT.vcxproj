@@ -411,6 +411,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
+    <ClCompile Include="src\MovementComp.cpp" />
     <ClCompile Include="src\EntityComp.cpp" />
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Application.h" />
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Entity.h" />
@@ -515,6 +516,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\MinSizeRel\cmake_pch.hxx" />
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\RelWithDebInfo\cmake_pch.hxx" />
     <ClInclude Include="include\EntityComp.h" />
+    <ClInclude Include="include\MovementComp.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\dev\TyrantDev\TYRANT\ZERO_CHECK.vcxproj">

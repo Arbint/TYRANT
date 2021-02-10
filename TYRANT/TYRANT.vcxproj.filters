@@ -20,6 +20,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\EntityComp.cpp" />
+    <ClCompile Include="src\MovementComp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Application.h">
@@ -59,6 +60,7 @@
       <Filter>Precompile Header File</Filter>
     </ClInclude>
     <ClInclude Include="include\EntityComp.h" />
+    <ClInclude Include="include\MovementComp.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeLists.txt" />

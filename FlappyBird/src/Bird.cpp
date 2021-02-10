@@ -22,14 +22,14 @@ void Bird::HandleInput()
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 	{
-		m_PhysicsComp->SetVel(sf::Vector2f(0.f, -400.f));
+		m_PhysicsComp->SetVelocity(sf::Vector2f(0.f, -400.f));
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
 	{
-		m_PhysicsComp->SetVel(sf::Vector2f( 200.f, 0.f));
+		m_PhysicsComp->SetVelocity(sf::Vector2f( 200.f, 0.f));
 	}
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
 	{
-		m_PhysicsComp->SetVel(sf::Vector2f(-200.f,0.f));
+		m_PhysicsComp->SetVelocity(sf::Vector2f(-200.f,0.f));
 	}
 }
