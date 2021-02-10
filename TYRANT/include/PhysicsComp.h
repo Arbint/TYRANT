@@ -17,6 +17,7 @@ namespace ty
 		sf::Clock m_Timer;
 		bool m_enabled;
 		float m_mass;
+		float m_AirFraction;
 		sf::Vector2f m_velocity;
 	};
 }

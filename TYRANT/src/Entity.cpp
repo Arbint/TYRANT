@@ -44,6 +44,11 @@ namespace ty
 		}
 	}
 
+	void Entity::Move(const sf::Vector2f& moveAmt)
+	{
+		m_Visual.move(moveAmt);
+	}
+
 	Level* Entity::GetLevel()
 	{
 		return m_Level;

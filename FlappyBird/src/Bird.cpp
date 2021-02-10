@@ -24,4 +24,12 @@ void Bird::HandleInput()
 	{
 		m_PhysicsComp->SetVel(sf::Vector2f(0.f, -400.f));
 	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
+	{
+		m_PhysicsComp->SetVel(sf::Vector2f( 200.f, 0.f));
+	}
+	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
+	{
+		m_PhysicsComp->SetVel(sf::Vector2f(-200.f,0.f));
+	}
 }

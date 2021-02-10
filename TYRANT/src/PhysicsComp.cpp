@@ -7,7 +7,8 @@ namespace ty{
 		: EntityComp(Owner),
 		m_enabled(true),
 		m_mass(1.f),
-		m_velocity(0,0)
+		m_velocity(0,0),
+		m_AirFraction(0.2)
 	{
 
 	}
@@ -17,11 +18,9 @@ namespace ty{
 		if (m_enabled && GetOwner())
 		{
 			m_velocity.y += DeltaTime * GRAVITY;
-			std::cout << "vel is: " << m_velocity.y << std::endl;
+			m_velocity -= m_velocity * m_AirFraction * DeltaTime;
 			sf::Vector2f movment = m_velocity * DeltaTime;
-			sf::Sprite& OwnerVisual = GetOwner()->GetVisual();
-			OwnerVisual.move(movment);
-			std::cout << "owner loc y :" << OwnerVisual.getPosition().y << std::endl;
+			GetOwner()->Move(movment);
 		}
 	}
 	void PhysicsComp::AddImpulse(const sf::Vector2f& impulse)

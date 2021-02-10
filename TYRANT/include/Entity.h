@@ -16,6 +16,7 @@ namespace ty
 		virtual void HandleInput();
 		virtual void Tick(float DeltaTime);
 		void SetVisual(const std::string& visualName);
+		void Move(const sf::Vector2f& moveAmt);
 		sf::Sprite& GetVisual() { return m_Visual; }
 		class Level* GetLevel();
 		class Application* GetApp() { return m_app; }
