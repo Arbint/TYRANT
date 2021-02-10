@@ -3,7 +3,7 @@
 Bird::Bird(ty::Level* level)
 	: Entity(level)
 {
-	SetVisual("bird-01.png");
+	SetVisual("bird.png");
 	if (GetApp() && GetApp()->GetWindow())
 	{
 		sf::Vector2u windowSize = GetApp()->GetWindow()->getSize();
