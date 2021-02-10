@@ -410,6 +410,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
       <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
+    <ClCompile Include="src\PhysicsComp.cpp" />
     <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\Application.h" />
     <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\Entity.h" />
     <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\EntryPoint.h" />
@@ -493,6 +494,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\Release\cmake_pch.hxx" />
     <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\MinSizeRel\cmake_pch.hxx" />
     <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\RelWithDebInfo\cmake_pch.hxx" />
+    <ClInclude Include="include\PhysicsComp.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="E:\Dev\TYRANT_Dev\TYRANT\ZERO_CHECK.vcxproj">

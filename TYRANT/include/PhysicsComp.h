@@ -6,6 +6,7 @@ namespace ty
 	{
 	public:
 		PhysicsComp();
+
 	};
 }
 

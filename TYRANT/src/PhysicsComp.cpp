@@ -1,5 +1,5 @@
 #include "PhysicsComp.h"
-namespace ty{
+namespace ty{ 
 	PhysicsComp::PhysicsComp()
 	{
 
