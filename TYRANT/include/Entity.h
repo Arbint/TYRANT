@@ -19,9 +19,17 @@ namespace ty
 		sf::Sprite& GetVisual() { return m_Visual; }
 		class Level* GetLevel();
 		class Application* GetApp() { return m_app; }
+		template<typename T>
+		std::shared_ptr<T> ConstructComponent()
+		{
+			std::shared_ptr<T> newComp(new T(this));
+			m_Components.push_back(newComp);
+			return newComp;
+		}
 	private:
 		sf::Sprite m_Visual;
 		class Level* m_Level;
 		class Application* m_app;
+		std::vector<std::shared_ptr<class EntityComp>> m_Components;
 	};
 }

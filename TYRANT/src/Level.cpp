@@ -20,19 +20,9 @@ namespace ty
 
 	void Level::Tick(float DeltaTime)
 	{
-		TickPhysics(DeltaTime);
-
 		for (auto entity : m_Entities)
 		{
 			entity->Tick(DeltaTime);
-		}
-	}
-
-	void Level::TickPhysics(float DeltaTime)
-	{
-		for (PhysicsComp* pc : m_PhysicsComps)
-		{
-			pc->TickPhysics(DeltaTime);
 		}
 	}
 
@@ -73,9 +63,5 @@ namespace ty
 		{
 			newEntity->BeginPlay();
 		}
-	}
-	void Level::AddPhysicsComp(PhysicsComp* newPhysicsComp)
-	{
-		m_PhysicsComps.push_back(newPhysicsComp);
 	}
 }

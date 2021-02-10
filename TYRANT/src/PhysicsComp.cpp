@@ -4,25 +4,22 @@
 #define GRAVITY 980.f;
 namespace ty{ 
 	PhysicsComp::PhysicsComp(Entity* Owner)
-		: m_Owner(Owner),
+		: EntityComp(Owner),
 		m_enabled(true),
 		m_mass(1.f),
 		m_velocity(0,0)
 	{
-		if (Owner && Owner->GetLevel())
-		{
-			Owner->GetLevel()->AddPhysicsComp(this);
-		}
+
 	}
 
-	void PhysicsComp::TickPhysics(float DeltaTime)
+	void PhysicsComp::TickComp(float DeltaTime)
 	{
-		if (m_enabled && m_Owner)
+		if (m_enabled && GetOwner())
 		{
 			m_velocity.y += DeltaTime * GRAVITY;
 			std::cout << "vel is: " << m_velocity.y << std::endl;
 			sf::Vector2f movment = m_velocity * DeltaTime;
-			sf::Sprite& OwnerVisual = m_Owner->GetVisual();
+			sf::Sprite& OwnerVisual = GetOwner()->GetVisual();
 			OwnerVisual.move(movment);
 			std::cout << "owner loc y :" << OwnerVisual.getPosition().y << std::endl;
 		}

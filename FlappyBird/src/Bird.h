@@ -10,6 +10,6 @@ public:
 	virtual void HandleInput() override;
 private:
 	sf::Clock m_Clock;
-	ty::PhysicsComp m_PhysicsComp;
+	std::shared_ptr<ty::PhysicsComp> m_PhysicsComp;
 };
 

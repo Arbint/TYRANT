@@ -1,8 +1,7 @@
 #include "Bird.h"
 #include <Application.h>
 Bird::Bird(ty::Level* level)
-	: Entity(level),
-	m_PhysicsComp(this)
+	: Entity(level)
 {
 	SetVisual("bird-01.png");
 	if (GetApp() && GetApp()->GetWindow())
@@ -11,6 +10,7 @@ Bird::Bird(ty::Level* level)
 		GetVisual().setOrigin(GetVisual().getGlobalBounds().width / 2, GetVisual().getGlobalBounds().height / 2);
 		GetVisual().setPosition(windowSize.x/4, windowSize.y/2);
 	}
+	m_PhysicsComp = ConstructComponent<ty::PhysicsComp>();
 }
 
 void Bird::Tick(float DeltaTime)
@@ -22,6 +22,6 @@ void Bird::HandleInput()
 {
 	if (sf::Keyboard::isKeyPressed(sf::Keyboard::Space))
 	{
-		m_PhysicsComp.SetVel(sf::Vector2f(0.f, -400.f));
+		m_PhysicsComp->SetVel(sf::Vector2f(0.f, -400.f));
 	}
 }

@@ -1,6 +1,7 @@
 #include <Entity.h>
 #include <Application.h>
 #include <Level.h>
+#include <EntityComp.h>
 namespace ty
 {
 
@@ -29,7 +30,10 @@ namespace ty
 
 	void Entity::Tick(float DeltaTime)
 	{
-
+		for (auto comp : m_Components)
+		{
+			comp->TickComp(DeltaTime);
+		}
 	}
 
 	void Entity::SetVisual(const std::string& visualName)

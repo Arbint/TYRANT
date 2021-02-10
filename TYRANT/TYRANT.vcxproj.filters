@@ -19,6 +19,7 @@
     <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\tyrant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\EntityComp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Application.h">
@@ -57,6 +58,7 @@
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\RelWithDebInfo\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
+    <ClInclude Include="include\EntityComp.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeLists.txt" />
