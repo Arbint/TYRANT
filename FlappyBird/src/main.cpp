@@ -3,11 +3,12 @@
 #include <SFML/Graphics.hpp>
 #include <Application.h>
 #include <Level.h>
-int main()
+#include "FlappyBirdApp.h"
+#include <EntryPoint.h>
+#include "MainLevel.h"
+ty::Application* createApplication()
 {
-	ty::Application* app= new ty::Application{1024,768, "test app"};
-	app->LoadLevel(new ty::Level(app));
-	app->Run();
-	delete app;
-	return 0;
+	FlappyBirdApp* app = new FlappyBirdApp();
+	app->LoadLevel(new MainLevel(app));
+	return app;
 }

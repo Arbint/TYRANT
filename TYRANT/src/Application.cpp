@@ -33,17 +33,10 @@ namespace ty
 		{
 			while (m_window->isOpen())
 			{
+				HandleWindowEvents();
 				float currentTime = m_clock.getElapsedTime().asSeconds();
 				float DeltaTime = currentTime - previousFrameTime;
 				previousFrameTime = currentTime;
-
-				sf::Event event;
-				m_window->pollEvent(event);
-				if (event.type == sf::Event::Closed)
-				{
-					m_window->close();
-				}
-				
 				Tick(DeltaTime);
 			}
 		}
@@ -56,10 +49,11 @@ namespace ty
 		m_window->clear();
 		if (m_CurrentLevel)
 		{
-			m_window->draw(m_CurrentLevel->GetBackground());
+			m_CurrentLevel->Draw();
 		}
 		m_window->display();
 	}
+	
 	void Application::TickLevel(float DeltaTime)
 	{
 		if (m_CurrentLevel)
@@ -67,6 +61,7 @@ namespace ty
 			m_CurrentLevel->Tick(DeltaTime);
 		}
 	}
+
 	void Application::LoadLevel(Level* newLevel)
 	{
 		UnLoadCurrentLevel();
@@ -87,6 +82,30 @@ namespace ty
 		return m_textureAssets[name];
 	}
 	
+	void Application::HandleWindowEvents()
+	{
+		sf::Event event;
+		while (m_window->pollEvent(event))
+		{
+			if (event.type == sf::Event::Closed)
+			{
+				m_window->close();
+			}
+			if (event.type==sf::Event::KeyPressed)
+			{
+				HandleInput();
+			}
+		}
+	}
+
+	void Application::HandleInput()
+	{
+		if (m_CurrentLevel)
+		{
+			m_CurrentLevel->HandleInput();
+		}
+	}
+
 	void Application::UnLoadCurrentLevel()
 	{
 		if (m_CurrentLevel)

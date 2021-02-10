@@ -1,60 +1,69 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\cmake_pch.cxx">
+    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\cmake_pch.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\Application.cpp">
+    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\Application.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\Level.cpp">
+    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\Entity.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\tyrant.cpp">
+    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\Level.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\tyrant.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Application.h">
+    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\Application.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Level.h">
+    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\Entity.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\TyrantCore.h">
+    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\EntryPoint.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\typch.h">
+    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\Level.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\tyrant.h">
+    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\TyrantCore.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\Debug\cmake_pch.hxx">
+    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\typch.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\tyrant.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\Debug\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\Release\cmake_pch.hxx">
+    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\Release\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\MinSizeRel\cmake_pch.hxx">
+    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\MinSizeRel\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
-    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\RelWithDebInfo\cmake_pch.hxx">
+    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\RelWithDebInfo\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeLists.txt" />
+    <CustomBuild Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{203DE1A1-5DCD-389C-86A2-5ED68794542C}</UniqueIdentifier>
+      <UniqueIdentifier>{C4C6A4B7-8BEE-32F7-9BE3-CD5EB9E2DDA4}</UniqueIdentifier>
     </Filter>
     <Filter Include="Precompile Header File">
-      <UniqueIdentifier>{B71D4C16-B671-377A-AFBF-6DFDA7D771EE}</UniqueIdentifier>
+      <UniqueIdentifier>{555D6AD5-CE74-3EAC-AA4D-C63AF5E5D8EC}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{C51C9010-2881-357B-9CC9-CC5295C98F65}</UniqueIdentifier>
+      <UniqueIdentifier>{65DB306D-9ADC-37AE-9B9D-33F3C3815128}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

@@ -12,6 +12,9 @@ namespace ty
 		void TickLevel(float DeltaTime);
 		virtual void LoadLevel(class Level* newLevel);
 		const sf::Texture& LoadTexture(const std::string& name = "sky.png");
+		sf::RenderWindow* GetWindow() { return m_window; }
+		virtual void HandleWindowEvents();
+		virtual void HandleInput();
 	private:
 		void UnLoadCurrentLevel();
 	private:
