@@ -15,6 +15,7 @@ namespace ty
 		sf::RenderWindow* GetWindow() { return m_window; }
 		virtual void HandleWindowEvents();
 		virtual void HandleInput();
+		class Level* GetCurrentLevel() { return m_CurrentLevel; }
 	private:
 		void UnLoadCurrentLevel();
 	private:

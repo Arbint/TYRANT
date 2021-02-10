@@ -6,7 +6,7 @@ MainLevel::MainLevel(ty::Application* app)
 	: Level(app),
 	m_BackgroundMoveSpeed(40.f)
 {
-	AddEntity(ty::EntitySharedRef(new Bird(app)));
+	AddEntity(ty::EntitySharedRef(new Bird(this)));
 	m_background_rep.setTexture(*GetBackground().getTexture());
 }
 

@@ -1,13 +1,15 @@
 #include <Entity.h>
 #include <Application.h>
+#include <Level.h>
 namespace ty
 {
 
-	Entity::Entity(class Application* app)
-		:m_app(app),
-		m_Visual()
+	Entity::Entity(Level* level)
+		:m_Level(level),
+		m_Visual(),
+		m_app(level->GetApp())
 	{
-
+		
 	}
 
 	Entity::~Entity()
@@ -32,10 +34,15 @@ namespace ty
 
 	void Entity::SetVisual(const std::string& visualName)
 	{
-		if (m_app)
+		if (m_Level)
 		{
-			m_Visual.setTexture(m_app->LoadTexture(visualName));
+			m_Visual.setTexture(m_Level->GetApp()->LoadTexture(visualName));
 		}
+	}
+
+	Level* Entity::GetLevel()
+	{
+		return m_Level;
 	}
 
 }

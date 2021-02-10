@@ -10,16 +10,18 @@ namespace ty
 	class TYRANT_API Entity
 	{
 	public:
-		Entity(class Application* app);
+		Entity(class Level* app);
 		virtual ~Entity();
 		virtual void BeginPlay();
 		virtual void HandleInput();
-
 		virtual void Tick(float DeltaTime);
 		void SetVisual(const std::string& visualName);
 		sf::Sprite& GetVisual() { return m_Visual; }
+		class Level* GetLevel();
+		class Application* GetApp() { return m_app; }
 	private:
 		sf::Sprite m_Visual;
+		class Level* m_Level;
 		class Application* m_app;
 	};
 }
