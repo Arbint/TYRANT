@@ -10,7 +10,6 @@ namespace ty
 		m_Visual(),
 		m_app(level->GetApp())
 	{
-		
 	}
 
 	Entity::~Entity()

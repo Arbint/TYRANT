@@ -19,9 +19,11 @@ namespace ty
 		std::vector<EntitySharedRef>& GetEntities() { return m_Entities; }
 		void AddEntity(EntitySharedRef newEntity);
 		class Application* GetApp() { return m_app; }
+		float GetTimeSeconds() const { return m_GlobalTimer.getElapsedTime().asSeconds(); }
 	private:
 		class Application* m_app;
 		sf::Sprite m_Background;
 		std::vector<EntitySharedRef> m_Entities;
+		sf::Clock m_GlobalTimer;
 	};
 }

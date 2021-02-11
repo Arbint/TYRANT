@@ -19,6 +19,7 @@ namespace ty
 		void Move(const sf::Vector2f& moveAmt);
 		void SetLocation(const sf::Vector2f& Loc);
 		sf::Sprite& GetVisual() { return m_Visual; }
+		sf::FloatRect GetBound() const { return m_Visual.getGlobalBounds(); }
 		class Level* GetLevel();
 		class Application* GetApp() { return m_app; }
 		template<typename T>

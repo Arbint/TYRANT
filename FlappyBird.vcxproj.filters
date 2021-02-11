@@ -17,6 +17,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="FlappyBird\src\Pipe.cpp" />
+    <ClCompile Include="FlappyBird\src\pipeGenerator.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\Bird.h">
@@ -44,6 +45,7 @@
       <Filter>Precompile Header File</Filter>
     </ClInclude>
     <ClInclude Include="FlappyBird\src\Pipe.h" />
+    <ClInclude Include="FlappyBird\src\pipeGenerator.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\dev\TyrantDev\TYRANT\CMakeLists.txt" />
