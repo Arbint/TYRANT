@@ -20,11 +20,11 @@ namespace ty
 
 	void Level::Tick(float DeltaTime)
 	{
-		for (auto entity : m_Entities)
+		for (int i = 0; i < m_Entities.size(); ++i)
 		{
-			if (entity)
-			{ 
-				entity->Tick(DeltaTime);
+			if (m_Entities[i])
+			{
+				m_Entities[i]->Tick(DeltaTime);
 			}
 		}
 	}
@@ -45,17 +45,23 @@ namespace ty
 
 	void Level::DrawEntities()
 	{
-		for (auto entity : GetEntities())
+		for (int i = 0; i < m_Entities.size(); ++i)
 		{
-			m_app->GetWindow()->draw(entity->GetVisual());
+			if (m_Entities[i])
+			{
+				GetApp()->GetWindow()->draw(m_Entities[i]->GetVisual());
+			}
 		}
 	}
 
 	void Level::HandleInput()
 	{
-		for (auto entity : GetEntities())
+		for (int i = 0; i < m_Entities.size(); ++i)
 		{
-			entity->HandleInput();
+			if (m_Entities[i])
+			{
+				m_Entities[i]->HandleInput();
+			}
 		}
 	}
 

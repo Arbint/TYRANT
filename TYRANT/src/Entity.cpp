@@ -14,7 +14,7 @@ namespace ty
 
 	Entity::~Entity()
 	{
-
+		
 	}
 
 	void Entity::BeginPlay()
