@@ -3,6 +3,8 @@
 #include "Level.h"
 #include "Application.h"
 #include "PhysicsComp.h"
+#include "VisualComp.h"
+
 namespace ty
 {
 	Level::Level(Application* App)
@@ -35,7 +37,6 @@ namespace ty
 		{
 			DrawBackground();
 			DrawEntities();
-			DrawForground();
 		}
 	}
 
@@ -46,17 +47,12 @@ namespace ty
 
 	void Level::DrawEntities()
 	{
-		for (int i = 0; i < m_Entities.size(); ++i)
-		{
-			if (m_Entities[i])
-			{
-				GetApp()->GetWindow()->draw(m_Entities[i]->GetVisual());
-			}
-		}
-	}
+		std::vector<std::shared_ptr<VisualComp>> AllVisuals = GetAllDrawablesSorted();
 
-	void Level::DrawForground()
-	{
+		for (int i = 0; i < AllVisuals.size(); ++i)
+		{
+			GetApp()->GetWindow()->draw(AllVisuals[i]->GetVisual());
+		}
 	}
 
 	void Level::HandleInput()
@@ -77,5 +73,17 @@ namespace ty
 		{
 			newEntity->BeginPlay();
 		}
+	}
+
+	std::vector<std::shared_ptr<class VisualComp>> Level::GetAllDrawablesSorted()
+	{
+		std::vector<std::shared_ptr<VisualComp>> AllVisuals;
+		for (int i =0; i < m_Entities.size(); ++i)
+		{
+			auto visualComps = m_Entities[i]->GetVisualComponents();
+			AllVisuals.insert(AllVisuals.end(), visualComps.begin(), visualComps.end());
+		}
+		std::sort(AllVisuals.begin(), AllVisuals.end());
+		return AllVisuals;
 	}
 }

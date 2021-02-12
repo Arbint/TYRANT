@@ -1,15 +1,27 @@
 #include "Bird.h"
 #include <Application.h>
+#include <VisualComp.h>
+#include <PhysicsComp.h>
 Bird::Bird(ty::Level* level)
 	: Entity(level)
 {
-	SetVisual("bird.png");
+	m_BirdVirsual = ConstructComponent<ty::VisualComp>();
+	if (m_BirdVirsual)
+	{
+		m_BirdVirsual->SetTexture("bird.png");
+		m_BirdVirsual->SetOrigin(
+			sf::Vector2f(m_BirdVirsual->GetVisual().getGlobalBounds().width / 2,
+			m_BirdVirsual->GetVisual().getGlobalBounds().height / 2)
+		);
+		m_BirdVirsual->SetZOrder(2);
+	}
+
 	if (GetApp() && GetApp()->GetWindow())
 	{
 		sf::Vector2u windowSize = GetApp()->GetWindow()->getSize();
-		GetVisual().setOrigin(GetVisual().getGlobalBounds().width / 2, GetVisual().getGlobalBounds().height / 2);
-		GetVisual().setPosition(windowSize.x/4, windowSize.y/2);
+		SetLocation(sf::Vector2f(windowSize.x / 4, windowSize.y / 2));
 	}
+
 	m_PhysicsComp = ConstructComponent<ty::PhysicsComp>();
 }
 

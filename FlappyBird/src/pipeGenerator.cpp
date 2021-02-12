@@ -37,13 +37,13 @@ void PipeGenerator::Tick(float DeltaTime)
 
 void PipeGenerator::SpawnPipes()
 {
+	/*
 	ty::EntitySharedRef TopPipe(new Pipe(GetLevel()));
 	ty::EntitySharedRef BtmPipe(new Pipe(GetLevel()));
 	GetLevel()->AddEntity(TopPipe);
 	GetLevel()->AddEntity(BtmPipe);
-
 	int PipeHeight = TopPipe->GetBound().height;
-	TopPipe->GetVisual().setOrigin(TopPipe->GetBound().width/2, TopPipe->GetBound().height/2);
+	TopPipe->.setOrigin(TopPipe->GetBound().width/2, TopPipe->GetBound().height/2);
 	BtmPipe->GetVisual().setOrigin(TopPipe->GetVisual().getOrigin());
 	TopPipe->GetVisual().setRotation(180);
 	float PipeStartXLocation = GetApp()->GetWindow()->getSize().x + TopPipe->GetBound().width/2;
@@ -51,4 +51,5 @@ void PipeGenerator::SpawnPipes()
 	float BtmPipeYLocation = TopPipeYLocation + m_Gap;
 	TopPipe->SetLocation(sf::Vector2f(PipeStartXLocation, TopPipeYLocation));
 	BtmPipe->SetLocation(sf::Vector2f(PipeStartXLocation, BtmPipeYLocation));
+	*/
 }

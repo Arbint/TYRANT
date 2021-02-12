@@ -2,12 +2,14 @@
 #include <Application.h>
 #include <Level.h>
 #include <EntityComp.h>
+#include <typeinfo>
+#include <VisualComp.h>
+#include <MathUtility.h>
 namespace ty
 {
 
 	Entity::Entity(Level* level)
 		:m_Level(level),
-		m_Visual(),
 		m_app(level->GetApp())
 	{
 	}
@@ -29,33 +31,42 @@ namespace ty
 
 	void Entity::Tick(float DeltaTime)
 	{
-		for (auto comp : m_Components)
+		for (int i = 0; i < m_Components.size(); ++i)
 		{
-			comp->TickComp(DeltaTime);
+			m_Components[i]->TickComp(DeltaTime);
 		}
 	}
 
-	void Entity::SetVisual(const std::string& visualName)
+	sf::FloatRect Entity::GetBound()
 	{
-		if (m_Level)
+		sf::FloatRect bound;
+		for (int i = 0; i < m_VisualComponents.size(); ++i)
 		{
-			m_Visual.setTexture(m_Level->GetApp()->LoadTexture(visualName));
+			bound = bound + m_VisualComponents[i]->GetBound();
 		}
+		return bound;
 	}
 
 	void Entity::Move(const sf::Vector2f& moveAmt)
 	{
-		m_Visual.move(moveAmt);
+		m_location += moveAmt;
+		for (int i = 0; i < m_Components.size(); ++i)
+		{
+			m_Components[i]->OnwerMoved(moveAmt);
+		}
 	}
 
 	void Entity::SetLocation(const sf::Vector2f& Loc)
 	{
-		GetVisual().setPosition(Loc);
+		m_location = Loc;
+		for (int i = 0; i < m_Components.size(); ++i)
+		{
+			m_Components[i]->OwnerTeleported(Loc);
+		}
 	}
 
 	Level* Entity::GetLevel()
 	{
 		return m_Level;
 	}
-
 }

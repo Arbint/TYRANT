@@ -14,13 +14,15 @@ namespace ty
 		virtual void Draw();
 		virtual void DrawBackground();
 		virtual void DrawEntities();
-		virtual void DrawForground();
 		virtual void HandleInput();
 		sf::Sprite& GetBackground() { return m_Background; }
 		std::vector<EntitySharedRef>& GetEntities() { return m_Entities; }
 		void AddEntity(EntitySharedRef newEntity);
 		class Application* GetApp() { return m_app; }
 		float GetTimeSeconds() const { return m_GlobalTimer.getElapsedTime().asSeconds(); }
+		
+		std::vector<std::shared_ptr<class VisualComp>> GetAllDrawablesSorted();
+
 	private:
 		class Application* m_app;
 		sf::Sprite m_Background;

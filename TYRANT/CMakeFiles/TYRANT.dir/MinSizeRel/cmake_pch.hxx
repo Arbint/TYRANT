@@ -2,5 +2,5 @@
 
 #pragma system_header
 #ifdef __cplusplus
-#include "C:/dev/TyrantDev/TYRANT/TYRANT/include/typch.h"
+#include "E:/Dev/TYRANT_Dev/TYRANT/TYRANT/include/typch.h"
 #endif // __cplusplus
