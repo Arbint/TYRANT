@@ -7,11 +7,11 @@
 #include <iostream>
 PipeGenerator::PipeGenerator(ty::Level* level)
 	: Entity(level),
-	m_SpawnIntervalSeconds(2),
+	m_SpawnIntervalSeconds(5),
 	m_SpawnTimer(),
 	m_LevelInterval(5.f),
-	m_Gap(500.f),
-	m_smallestGap(100.f),
+	m_Gap(800.f),
+	m_smallestGap(300.f),
 	m_GapShrikPerLevel(50.f)
 {
 	float currentTime = std::time(nullptr);
@@ -25,6 +25,7 @@ void PipeGenerator::Tick(float DeltaTime)
 	{
 		SpawnPipes();
 		m_SpawnTimer.restart();
+		m_SpawnIntervalSeconds = 3 + rand() % 5;
 	}
 	if (GetLevel()->GetTimeSeconds() > m_LevelInterval)
 	{
@@ -36,15 +37,17 @@ void PipeGenerator::Tick(float DeltaTime)
 
 void PipeGenerator::SpawnPipes()
 {
-	std::cout << "spawnning pipes" << std::endl;
 	ty::EntitySharedRef TopPipe(new Pipe(GetLevel()));
 	ty::EntitySharedRef BtmPipe(new Pipe(GetLevel()));
 	GetLevel()->AddEntity(TopPipe);
 	GetLevel()->AddEntity(BtmPipe);
 
 	int PipeHeight = TopPipe->GetBound().height;
-	float PipeStartXLocation = GetApp()->GetWindow()->getSize().x;
-	float TopPipeYLocation = rand()%PipeHeight - PipeHeight;
+	TopPipe->GetVisual().setOrigin(TopPipe->GetBound().width/2, TopPipe->GetBound().height/2);
+	BtmPipe->GetVisual().setOrigin(TopPipe->GetVisual().getOrigin());
+	TopPipe->GetVisual().setRotation(180);
+	float PipeStartXLocation = GetApp()->GetWindow()->getSize().x + TopPipe->GetBound().width/2;
+	float TopPipeYLocation = rand()%(PipeHeight/2);
 	float BtmPipeYLocation = TopPipeYLocation + m_Gap;
 	TopPipe->SetLocation(sf::Vector2f(PipeStartXLocation, TopPipeYLocation));
 	BtmPipe->SetLocation(sf::Vector2f(PipeStartXLocation, BtmPipeYLocation));

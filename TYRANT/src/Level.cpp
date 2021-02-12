@@ -68,8 +68,6 @@ namespace ty
 	void Level::AddEntity(EntitySharedRef newEntity)
 	{
 		m_Entities.push_back(newEntity);
-		std::cout << "new entity added, now we have " << m_Entities.size() << std::endl;
-		std::cout << "current entity mem location : " << m_Entities[0].get() << std::endl;
 		if (newEntity)
 		{
 			newEntity->BeginPlay();
