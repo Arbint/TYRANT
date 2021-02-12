@@ -3,12 +3,14 @@
 #include <Entity.h>
 #include "Bird.h"
 #include "pipeGenerator.h"
+#include "Land.h"
 MainLevel::MainLevel(ty::Application* app)
 	: Level(app),
 	m_BackgroundMoveSpeed(40.f)
 {
 	AddEntity(ty::EntitySharedRef(new Bird(this)));
 	AddEntity(ty::EntitySharedRef(new PipeGenerator(this)));
+	AddEntity(ty::EntitySharedRef(new Land(this)));
 	m_background_rep.setTexture(*GetBackground().getTexture());
 }
 

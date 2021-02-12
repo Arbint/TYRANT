@@ -14,6 +14,7 @@ namespace ty
 		virtual void Draw();
 		virtual void DrawBackground();
 		virtual void DrawEntities();
+		virtual void DrawForground();
 		virtual void HandleInput();
 		sf::Sprite& GetBackground() { return m_Background; }
 		std::vector<EntitySharedRef>& GetEntities() { return m_Entities; }

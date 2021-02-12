@@ -1,72 +1,74 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\CMakeFiles\FlappyBird.dir\cmake_pch.cxx">
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\CMakeFiles\FlappyBird.dir\cmake_pch.cxx">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\Bird.cpp">
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\Bird.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\FlappyBirdApp.cpp">
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\FlappyBirdApp.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\MainLevel.cpp">
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\MainLevel.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\Pipe.cpp">
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\Pipe.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\main.cpp">
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\pipeGenerator.cpp">
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\pipeGenerator.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="FlappyBird\src\Land.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\Bird.h">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\Bird.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\FlappyBirdApp.h">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\FlappyBirdApp.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\MainLevel.h">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\MainLevel.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\Pipe.h">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\Pipe.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\pipeGenerator.h">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\pipeGenerator.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\FlappyBird\src\test.h">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\FlappyBird\src\test.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\CMakeFiles\FlappyBird.dir\Debug\cmake_pch.hxx">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\CMakeFiles\FlappyBird.dir\Debug\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\CMakeFiles\FlappyBird.dir\Release\cmake_pch.hxx">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\CMakeFiles\FlappyBird.dir\Release\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\CMakeFiles\FlappyBird.dir\MinSizeRel\cmake_pch.hxx">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\CMakeFiles\FlappyBird.dir\MinSizeRel\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\CMakeFiles\FlappyBird.dir\RelWithDebInfo\cmake_pch.hxx">
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\CMakeFiles\FlappyBird.dir\RelWithDebInfo\cmake_pch.hxx">
       <Filter>Precompile Header File</Filter>
     </ClInclude>
+    <ClInclude Include="FlappyBird\src\Land.h" />
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\Dev\TYRANT_Dev\TYRANT\CMakeLists.txt" />
+    <CustomBuild Include="C:\dev\TyrantDev\TYRANT\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{C4C6A4B7-8BEE-32F7-9BE3-CD5EB9E2DDA4}</UniqueIdentifier>
+      <UniqueIdentifier>{203DE1A1-5DCD-389C-86A2-5ED68794542C}</UniqueIdentifier>
     </Filter>
     <Filter Include="Precompile Header File">
-      <UniqueIdentifier>{555D6AD5-CE74-3EAC-AA4D-C63AF5E5D8EC}</UniqueIdentifier>
+      <UniqueIdentifier>{B71D4C16-B671-377A-AFBF-6DFDA7D771EE}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{65DB306D-9ADC-37AE-9B9D-33F3C3815128}</UniqueIdentifier>
+      <UniqueIdentifier>{C51C9010-2881-357B-9CC9-CC5295C98F65}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

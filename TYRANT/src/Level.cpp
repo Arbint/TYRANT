@@ -35,6 +35,7 @@ namespace ty
 		{
 			DrawBackground();
 			DrawEntities();
+			DrawForground();
 		}
 	}
 
@@ -52,6 +53,10 @@ namespace ty
 				GetApp()->GetWindow()->draw(m_Entities[i]->GetVisual());
 			}
 		}
+	}
+
+	void Level::DrawForground()
+	{
 	}
 
 	void Level::HandleInput()
