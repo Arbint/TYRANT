@@ -85,7 +85,7 @@ namespace ty
 	sf::Transform Entity::GetTransform() const
 	{
 		sf::Transform Trans;
-		Trans.rotate(getRotation(), m_location + m_RelativeOrigin);
+		Trans.rotate(getRotation(), m_location);
 		Trans.translate(m_location - m_RelativeOrigin);
 		return Trans;
 	}

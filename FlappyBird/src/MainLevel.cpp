@@ -17,8 +17,8 @@ MainLevel::MainLevel(ty::Application* app)
 	//debug
 	ty::EntitySharedRef pipeTop(new Pipe(this));
 	pipeTop->SetPosition(sf::Vector2f(768/2, 1024/2));
-	pipeTop->Move(sf::Vector2f(69/2, 0.f));
-	//pipeTop->SetRelativeOrigin(sf::Vector2f(69/4,0.f));
+	//pipeTop->Move(sf::Vector2f(69/2, 0.f));
+	pipeTop->SetRelativeOrigin(sf::Vector2f(69/2,0.f));
 	
 	AddEntity(pipeTop);
 	pipeTest = pipeTop.get();
@@ -40,7 +40,7 @@ void MainLevel::Tick(float DeltaTime)
 	}
 
 	//debug
-	//pipeTest->SetRotation(pipeTest->getRotation() + DeltaTime * 10.f);
+	pipeTest->SetRotation(pipeTest->getRotation() + DeltaTime * 10.f);
 }
 
 void MainLevel::DrawBackground()
