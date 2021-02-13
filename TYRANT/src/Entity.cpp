@@ -24,7 +24,6 @@ namespace ty
 
 	Entity::~Entity()
 	{
-		std::cout << "Entity Destroied" << std::endl;
 	}
 
 	void Entity::BeginPlay()

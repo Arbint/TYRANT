@@ -36,6 +36,7 @@
     </ClCompile>
     <ClCompile Include="src\CollisionComp.cpp" />
     <ClCompile Include="src\CollisionSystem.cpp" />
+    <ClCompile Include="src\Hud.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Application.h">
@@ -91,6 +92,7 @@
     </ClInclude>
     <ClInclude Include="include\CollisionComp.h" />
     <ClInclude Include="include\CollisionSystem.h" />
+    <ClInclude Include="include\Hud.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeLists.txt" />

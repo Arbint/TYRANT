@@ -413,6 +413,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ClCompile Include="src\CollisionComp.cpp" />
     <ClCompile Include="src\CollisionSystem.cpp" />
+    <ClCompile Include="src\Hud.cpp" />
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Application.h" />
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Entity.h" />
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\EntityComp.h" />
@@ -612,6 +613,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\RelWithDebInfo\cmake_pch.hxx" />
     <ClInclude Include="include\CollisionComp.h" />
     <ClInclude Include="include\CollisionSystem.h" />
+    <ClInclude Include="include\Hud.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\dev\TyrantDev\TYRANT\ZERO_CHECK.vcxproj">

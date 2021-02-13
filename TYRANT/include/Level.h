@@ -13,6 +13,9 @@ namespace ty
 		virtual void Tick(float DeltaTime);
 		virtual void Draw();
 		virtual void DrawBackground();
+		virtual void SetHud(std::shared_ptr<class Hud> hud);
+		virtual void DrawHud();
+		virtual void TickHud(float DeltaTime);
 		virtual void DrawEntities();
 		virtual void HandleInput();
 		virtual void PostTick();
@@ -31,5 +34,6 @@ namespace ty
 		std::vector<EntitySharedRef> m_Entities;
 		sf::Clock m_GlobalTimer;
 		std::vector<class Entity*> m_PendingDestoryEntities;
+		std::shared_ptr<class Hud> m_Hud;
 	};
 }

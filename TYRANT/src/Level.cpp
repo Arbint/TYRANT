@@ -4,15 +4,13 @@
 #include "Application.h"
 #include "PhysicsComp.h"
 #include "VisualComp.h"
-
+#include "Hud.h"
 namespace ty
 {
 	Level::Level(Application* App)
 		: m_app(App),
 		m_Background(App->LoadTexture())
 	{
-
-
 	}
 
 	void Level::BeginPlay()
@@ -37,12 +35,34 @@ namespace ty
 		{
 			DrawBackground();
 			DrawEntities();
+			DrawHud();
 		}
 	}
 
 	void Level::DrawBackground()
 	{
 		m_app->GetWindow()->draw(m_Background);
+	}
+
+	void Level::SetHud(std::shared_ptr<class Hud> hud)
+	{
+		m_Hud = hud;
+	}
+
+	void Level::DrawHud()
+	{
+		if (m_Hud)
+		{
+			m_Hud->Draw();
+		}
+	}
+
+	void Level::TickHud(float DeltaTime)
+	{
+		if (m_Hud)
+		{
+			m_Hud->TickHud(DeltaTime);
+		}
 	}
 
 	void Level::DrawEntities()

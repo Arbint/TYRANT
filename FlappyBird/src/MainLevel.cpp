@@ -5,6 +5,7 @@
 #include "pipeGenerator.h"
 #include "Land.h"
 #include "Pipe.h"
+#include "MainLevelHud.h"
 MainLevel::MainLevel(ty::Application* app)
 	: Level(app),
 	m_BackgroundMoveSpeed(40.f)
@@ -12,6 +13,7 @@ MainLevel::MainLevel(ty::Application* app)
 	AddEntity(ty::EntitySharedRef(new Bird(this)));
 	AddEntity(ty::EntitySharedRef(new PipeGenerator(this)));
 	AddEntity(ty::EntitySharedRef(new Land(this)));
+	SetHud(std::shared_ptr<MainLevelHud>(new MainLevelHud(this)));
 	m_background_rep.setTexture(*GetBackground().getTexture());
 }
 

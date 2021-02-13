@@ -6,9 +6,17 @@ namespace ty
 	Application::Application(int width, int height, const std::string& title)
 		: m_window(new sf::RenderWindow(sf::VideoMode(width, height), title)),
 		m_CurrentLevel(nullptr),
-		m_CollisionSystem(new CollisionSystem())
-
+		m_CollisionSystem(new CollisionSystem()),
+		m_Paused(false)
 	{
+	}
+	void Application::UnPause()
+	{
+		m_Paused = false;
+	}
+	void Application::Pause()
+	{
+		m_Paused = true;
 	}
 	Application::~Application()
 	{
@@ -24,6 +32,7 @@ namespace ty
 	}
 	void Application::Run()
 	{
+		m_Paused = false;
 		if (m_CurrentLevel)
 		{
 			m_CurrentLevel->BeginPlay();
@@ -50,8 +59,11 @@ namespace ty
 
 	void Application::Tick(float DeltaTime)
 	{
-		TickLevel(DeltaTime);
-
+		if (!m_Paused)
+		{
+			TickLevel(DeltaTime);
+		}
+		m_CurrentLevel->TickHud(DeltaTime);
 		m_window->clear();
 		if (m_CurrentLevel)
 		{
@@ -86,6 +98,19 @@ namespace ty
 			}
 		}
 		return m_textureAssets[name];
+	}
+
+	const sf::Font& Application::LoadFont(const std::string& name)
+	{
+		if (m_FontAssets.find(name) == m_FontAssets.end())
+		{
+			sf::Font font;
+			if (font.loadFromFile("Resources/fonts/" + name))
+			{
+				m_FontAssets[name] = font;
+			}
+		}
+		return m_FontAssets[name];
 	}
 	
 	void Application::HandleWindowEvents()

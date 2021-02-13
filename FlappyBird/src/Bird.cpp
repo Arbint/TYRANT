@@ -55,5 +55,19 @@ void Bird::HandleInput()
 
 void Bird::Collided(ty::Entity* other)
 {
-	std::cout << "collided" << std::endl;
+	GetApp()->Pause();
+	sf::Clock flashTimer;
+	float FlashTime = 3.f;
+	sf::RectangleShape Flash;
+	sf::Color FlashColor(256, 256, 256, 0);
+	Flash.setSize(GetApp()->GetWindowSize());
+	while (flashTimer.getElapsedTime().asSeconds() < FlashTime)
+	{
+		GetApp()->HandleWindowEvents();
+		int FlashAlpha = (int)sin(flashTimer.getElapsedTime().asSeconds() * (3.14/2)/  FlashTime) * 255;
+		FlashColor.a = FlashAlpha;
+		Flash.setFillColor(FlashColor);
+		GetApp()->GetWindow()->draw(Flash);
+		GetApp()->GetWindow()->display();
+	}
 }
