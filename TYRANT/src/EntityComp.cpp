@@ -11,4 +11,9 @@ namespace ty
 	{
 
 	}
+
+	void EntityComp::TransformationUpdated()
+	{
+
+	}
 }

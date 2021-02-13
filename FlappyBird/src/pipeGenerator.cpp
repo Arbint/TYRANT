@@ -43,13 +43,13 @@ void PipeGenerator::SpawnPipes()
 	GetLevel()->AddEntity(TopPipe);
 	GetLevel()->AddEntity(BtmPipe);
 	int PipeHeight = TopPipe->GetBound().height;
-	TopPipe->.setOrigin(TopPipe->GetBound().width/2, TopPipe->GetBound().height/2);
-	BtmPipe->GetVisual().setOrigin(TopPipe->GetVisual().getOrigin());
-	TopPipe->GetVisual().setRotation(180);
+	TopPipe->SetRelativeOrigin(sf::Vector2f(TopPipe->GetBound().width / 2, TopPipe->GetBound().height / 2));
+	BtmPipe->SetRelativeOrigin(TopPipe->GetOrigin());
+	TopPipe->SetRotation(180);
 	float PipeStartXLocation = GetApp()->GetWindow()->getSize().x + TopPipe->GetBound().width/2;
 	float TopPipeYLocation = rand()%(PipeHeight/2);
 	float BtmPipeYLocation = TopPipeYLocation + m_Gap;
-	TopPipe->SetLocation(sf::Vector2f(PipeStartXLocation, TopPipeYLocation));
-	BtmPipe->SetLocation(sf::Vector2f(PipeStartXLocation, BtmPipeYLocation));
+	TopPipe->SetPosition(sf::Vector2f(PipeStartXLocation, TopPipeYLocation));
+	BtmPipe->SetPosition(sf::Vector2f(PipeStartXLocation, BtmPipeYLocation));
 	*/
 }

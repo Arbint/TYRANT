@@ -9,6 +9,6 @@ Pipe::Pipe(ty::Level* level)
 	m_movementComp = ConstructComponent<ty::MovementComp>();
 	m_visualComp = ConstructComponent<ty::VisualComp>();
 	m_visualComp->SetTexture("Pipe.png");	
-	m_movementComp->SetVelocity(sf::Vector2f(m_Speed, 0.f));
-	SetLocation(sf::Vector2f(GetApp()->GetWindow()->getSize().x, 0));
+	//m_movementComp->SetVelocity(sf::Vector2f(m_Speed, 0.f));
+	SetPosition(sf::Vector2f(GetApp()->GetWindow()->getSize().x/2, 0));
 }

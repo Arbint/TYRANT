@@ -5,7 +5,7 @@ namespace ty
 {
 
 	VisualComp::VisualComp(class Entity* Owner)
-		: EntityComp(Owner),
+		: SpaceComp(Owner),
 		m_ZOrder(0)
 	{
 	
@@ -46,19 +46,11 @@ namespace ty
 		return m_Visual.getGlobalBounds();
 	}
 
-	void VisualComp::OnwerMoved(const sf::Vector2f& amt)
+	void VisualComp::TransformationUpdated()
 	{
-		Move(amt);
-	}
-
-	void VisualComp::OwnerRotated(float amt)
-	{
-		Rotate(amt);
-	}
-
-	void VisualComp::OwnerTeleported(const sf::Vector2f& loc)
-	{
-		SetPosition(loc);
+		
+		m_Visual.setRotation(GetOwner()->getRotation() + GetLocalRotation());
+		m_Visual.setPosition(CalculateGlobalLocation());
 	}
 
 	bool operator>(const VisualComp& lhs, const VisualComp& rhs)

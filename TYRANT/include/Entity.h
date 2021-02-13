@@ -18,9 +18,20 @@ namespace ty
 		virtual void HandleInput();
 		virtual void Tick(float DeltaTime);
 		virtual sf::FloatRect GetBound();
+
+		//movement control
 		virtual void Move(const sf::Vector2f& moveAmt);
-		virtual void SetLocation(const sf::Vector2f& Loc);
+		virtual void SetPosition(const sf::Vector2f& Loc);
 		sf::Vector2f GetPosition() const { return m_location; }
+		
+		virtual void Rotate(float RotAmt);
+		virtual void SetRotation(float rotation);
+		virtual float getRotation() const { return m_rotation; }
+
+		virtual void SetRelativeOrigin(const sf::Vector2f& origin);
+		sf::Vector2f GetOrigin() const { return m_RelativeOrigin; }
+		
+		sf::Transform GetTransform() const;
 
 		class Level* GetLevel();
 		class Application* GetApp() { return m_app; }
@@ -48,9 +59,12 @@ namespace ty
 		}
 
 		std::vector<std::shared_ptr<class VisualComp>> GetVisualComponents() { return m_VisualComponents; }
-
 	private:
+		void BroadCastTransformationUpdate();
+	private:
+		sf::Vector2f m_RelativeOrigin;
 		sf::Vector2f m_location;
+		float m_rotation;
 		class Level* m_Level;
 		class Application* m_app;
 		std::vector<std::shared_ptr<class EntityComp>> m_Components;

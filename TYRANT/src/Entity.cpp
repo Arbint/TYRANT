@@ -10,7 +10,10 @@ namespace ty
 
 	Entity::Entity(Level* level)
 		:m_Level(level),
-		m_app(level->GetApp())
+		m_app(level->GetApp()),
+		m_location(0.f,0.f),
+		m_rotation(0.f),
+		m_RelativeOrigin(0.f,0.f)
 	{
 	}
 
@@ -50,23 +53,53 @@ namespace ty
 	void Entity::Move(const sf::Vector2f& moveAmt)
 	{
 		m_location += moveAmt;
-		for (int i = 0; i < m_Components.size(); ++i)
-		{
-			m_Components[i]->OnwerMoved(moveAmt);
-		}
+		BroadCastTransformationUpdate();
 	}
 
-	void Entity::SetLocation(const sf::Vector2f& Loc)
+	void Entity::Rotate(float RotAmt)
+	{
+		m_rotation += RotAmt;
+		BroadCastTransformationUpdate();
+	}
+
+	void Entity::SetRotation(float rotation)
+	{
+		m_rotation = rotation;
+		BroadCastTransformationUpdate();
+	}
+
+
+	void Entity::SetPosition(const sf::Vector2f& Loc)
 	{
 		m_location = Loc;
-		for (int i = 0; i < m_Components.size(); ++i)
-		{
-			m_Components[i]->OwnerTeleported(Loc);
-		}
+		BroadCastTransformationUpdate();
+	}
+
+	void Entity::SetRelativeOrigin(const sf::Vector2f& origin)
+	{
+		m_location += origin - m_RelativeOrigin;
+		m_RelativeOrigin = origin;
+		BroadCastTransformationUpdate();
+	}
+
+	sf::Transform Entity::GetTransform() const
+	{
+		sf::Transform Trans;
+		Trans.rotate(getRotation(), m_location + m_RelativeOrigin);
+		Trans.translate(m_location - m_RelativeOrigin);
+		return Trans;
 	}
 
 	Level* Entity::GetLevel()
 	{
 		return m_Level;
+	}
+
+	void Entity::BroadCastTransformationUpdate()
+	{
+		for (int i = 0; i < m_Components.size(); ++i)
+		{
+			m_Components[i]->TransformationUpdated();
+		}
 	}
 }

@@ -29,6 +29,7 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="src\MathUtility.cpp" />
+    <ClCompile Include="src\SpaceComp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\Application.h">
@@ -77,6 +78,7 @@
       <Filter>Precompile Header File</Filter>
     </ClInclude>
     <ClInclude Include="include\MathUtility.h" />
+    <ClInclude Include="include\SpaceComp.h" />
   </ItemGroup>
   <ItemGroup>
     <CustomBuild Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeLists.txt" />

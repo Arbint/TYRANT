@@ -19,15 +19,16 @@ Bird::Bird(ty::Level* level)
 	if (GetApp() && GetApp()->GetWindow())
 	{
 		sf::Vector2u windowSize = GetApp()->GetWindow()->getSize();
-		SetLocation(sf::Vector2f(windowSize.x / 4, windowSize.y / 2));
+		SetPosition(sf::Vector2f(768/2, 1024/2));
+		SetPosition(sf::Vector2f(windowSize.x / 4, windowSize.y / 2));
 	}
-
 	m_PhysicsComp = ConstructComponent<ty::PhysicsComp>();
 }
 
 void Bird::Tick(float DeltaTime)
 {
-	Entity::Tick(DeltaTime);
+	//Entity::Tick(DeltaTime);
+	SetRelativeOrigin(GetOrigin() + sf::Vector2f(10.f * DeltaTime, 0));
 }
 
 void Bird::HandleInput()
