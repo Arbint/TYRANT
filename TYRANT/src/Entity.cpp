@@ -17,6 +17,11 @@ namespace ty
 	{
 	}
 
+	void Entity::Destory()
+	{
+		GetLevel()->AddPendingDestory(this);
+	}
+
 	Entity::~Entity()
 	{
 		

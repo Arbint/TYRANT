@@ -12,3 +12,13 @@ Pipe::Pipe(ty::Level* level)
 	m_movementComp->SetVelocity(sf::Vector2f(m_Speed, 0.f));
 	SetPosition(sf::Vector2f(GetApp()->GetWindow()->getSize().x, 0));
 }
+
+void Pipe::Tick(float DeltaTime)
+{
+	Entity::Tick(DeltaTime);
+	if (m_visualComp->GetVisual().getPosition().x <= 200)
+	{
+		Destory();
+	}
+	
+}

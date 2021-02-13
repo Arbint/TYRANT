@@ -47,11 +47,11 @@ namespace ty
 	}
 
 	void VisualComp::TransformationUpdated()
-	{
-		
+	{	
 		m_Visual.setRotation(GetOwner()->getRotation() + GetLocalRotation());
 		m_Visual.setPosition(CalculateGlobalLocation());
 	}
+
 	bool VisualCompSortingFunc(const std::shared_ptr<VisualComp>& lhs, const std::shared_ptr<VisualComp>& rhs)
 	{
 		return lhs->GetZOrder() < rhs->GetZOrder();

@@ -13,6 +13,7 @@ namespace ty
 	{
 	public:
 		Entity(class Level* app);
+		void Destory();
 		virtual ~Entity();
 		virtual void BeginPlay();
 		virtual void HandleInput();
@@ -36,10 +37,6 @@ namespace ty
 		class Level* GetLevel();
 		class Application* GetApp() { return m_app; }
 		
-		//The C++ you learned:
-		void ConstructComponent();
-
-		//The C++ you try to understand and write
 		template<typename T>
 		typename std::enable_if<!std::is_base_of<VisualComp, T>::value, std::shared_ptr<T>>::type ConstructComponent()
 		
