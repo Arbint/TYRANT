@@ -14,17 +14,18 @@ namespace ty
 					sf::FloatRect JBound = m_RegisteredComponents[j]->GetOwnerBound();
 					if (JBound.intersects(IBound))
 					{
-
+						m_RegisteredComponents[i]->InformCollisionEvent(m_RegisteredComponents[j]->GetOwner());
+						m_RegisteredComponents[j]->InformCollisionEvent(m_RegisteredComponents[i]->GetOwner());
 					}
 				}
 			}
 		}
 	}
-	void CollisionSystem::UnRegisterCollisionComp(std::shared_ptr<CollisionComp> CompToUnregister)
+	void CollisionSystem::UnRegisterCollisionComp(CollisionComp* comp)
 	{
 		for (int i = 0; i < m_RegisteredComponents.size(); ++i)
 		{
-			if (m_RegisteredComponents[i] == CompToUnregister)
+			if (m_RegisteredComponents[i] == comp)
 			{
 				m_RegisteredComponents.erase(m_RegisteredComponents.begin() + i);
 			}

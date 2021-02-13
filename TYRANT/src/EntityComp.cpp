@@ -7,6 +7,10 @@ namespace ty
 	{
 
 	}
+	EntityComp::~EntityComp()
+	{
+		std::cout << "Entity Comp Destroied" << std::endl;
+	}
 	void EntityComp::TickComp(float DeltaTime)
 	{
 

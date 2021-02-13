@@ -14,6 +14,12 @@ Bird::Bird(ty::Level* level)
 			m_BirdVirsual->GetVisual().getGlobalBounds().height / 2)
 		);
 		m_BirdVirsual->SetZOrder(1);
+
+		m_CollisionComp = ConstructComponent<ty::CollisionComp>();
+		if (m_CollisionComp)
+		{
+			m_CollisionComp->RegisterCollisionResponse(std::bind(&Bird::Collided, this, std::placeholders::_2));
+		}
 	}
 
 	if (GetApp() && GetApp()->GetWindow())
@@ -45,4 +51,9 @@ void Bird::HandleInput()
 	{
 		m_PhysicsComp->SetVelocity(sf::Vector2f(-200.f,0.f));
 	}
+}
+
+void Bird::Collided(ty::Entity* other)
+{
+	std::cout << "collided" << std::endl;
 }

@@ -1,15 +1,12 @@
-#include "..\include\Application.h"
-#include "..\include\Application.h"
-#include "..\include\Application.h"
-#include "..\include\Application.h"
-#include "..\include\Application.h"
 #include <Application.h>
 #include <Level.h>
+#include <CollisionSystem.h>
 namespace ty
 {
 	Application::Application(int width, int height, const std::string& title)
 		: m_window(new sf::RenderWindow(sf::VideoMode(width, height), title)),
-		m_CurrentLevel(nullptr)
+		m_CurrentLevel(nullptr),
+		m_CollisionSystem(new CollisionSystem())
 
 	{
 	}
@@ -20,6 +17,10 @@ namespace ty
 			delete m_window;
 		}
 		UnLoadCurrentLevel();
+		if (m_CollisionSystem)
+		{
+			delete m_CollisionSystem;
+		}
 	}
 	void Application::Run()
 	{
@@ -38,6 +39,7 @@ namespace ty
 				float DeltaTime = currentTime - previousFrameTime;
 				previousFrameTime = currentTime;
 				Tick(DeltaTime);
+				m_CollisionSystem->CalculateCollision();
 				if (m_CurrentLevel)
 				{
 					m_CurrentLevel->PostTick();

@@ -16,6 +16,7 @@ namespace ty
 		virtual void HandleWindowEvents();
 		virtual void HandleInput();
 		class Level* GetCurrentLevel() { return m_CurrentLevel; }
+		class CollisionSystem* GetCollisionSystem() { return m_CollisionSystem; }
 	private:
 		void UnLoadCurrentLevel();
 	private:
@@ -23,5 +24,6 @@ namespace ty
 		sf::Clock m_clock;
 		class Level* m_CurrentLevel;
 		std::map<std::string, sf::Texture> m_textureAssets;
+		class CollisionSystem* m_CollisionSystem;
 	};
 }

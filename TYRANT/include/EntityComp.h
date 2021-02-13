@@ -7,6 +7,7 @@ namespace ty
 	{
 	public:
 		EntityComp(class Entity* Owner);
+		~EntityComp();
 		class Entity* GetOwner() { return m_Owner; }
 		const class Entity* GetOwner() const { return m_Owner; }
 		virtual void TickComp(float DeltaTime);

@@ -11,6 +11,7 @@ Pipe::Pipe(ty::Level* level)
 	m_visualComp->SetTexture("Pipe.png");	
 	m_movementComp->SetVelocity(sf::Vector2f(m_Speed, 0.f));
 	SetPosition(sf::Vector2f(GetApp()->GetWindow()->getSize().x, 0));
+	m_collisionComp = ConstructComponent<ty::CollisionComp>();
 }
 
 void Pipe::Tick(float DeltaTime)
