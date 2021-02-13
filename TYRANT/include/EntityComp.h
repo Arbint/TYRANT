@@ -8,6 +8,7 @@ namespace ty
 	public:
 		EntityComp(class Entity* Owner);
 		class Entity* GetOwner() { return m_Owner; }
+		const class Entity* GetOwner() const { return m_Owner; }
 		virtual void TickComp(float DeltaTime);
 		virtual void TransformationUpdated();
 		virtual const sf::FloatRect GetBound() const { return sf::FloatRect(0.f, 0.f, 0.f, 0.f); }

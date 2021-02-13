@@ -45,7 +45,7 @@ namespace ty
 		}
 	}
 
-	sf::FloatRect Entity::GetBound()
+	sf::FloatRect Entity::GetBound() const
 	{
 		sf::FloatRect bound(GetPosition(), sf::Vector2f(0.f,0.f));
 		if (m_VisualComponents.size()>0)

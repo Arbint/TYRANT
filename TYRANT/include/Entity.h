@@ -18,7 +18,7 @@ namespace ty
 		virtual void BeginPlay();
 		virtual void HandleInput();
 		virtual void Tick(float DeltaTime);
-		virtual sf::FloatRect GetBound();
+		virtual sf::FloatRect GetBound() const;
 
 		//movement control
 		virtual void Move(const sf::Vector2f& moveAmt);
