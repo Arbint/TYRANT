@@ -42,10 +42,14 @@ namespace ty
 
 	sf::FloatRect Entity::GetBound()
 	{
-		sf::FloatRect bound;
-		for (int i = 0; i < m_VisualComponents.size(); ++i)
+		sf::FloatRect bound(GetPosition(), sf::Vector2f(0.f,0.f));
+		if (m_VisualComponents.size()>0)
 		{
-			bound = bound + m_VisualComponents[i]->GetBound();
+			bound = m_VisualComponents[0]->GetBound();
+			for (int i = 0; i < m_VisualComponents.size(); ++i)
+			{
+				bound = bound + m_VisualComponents[i]->GetBound();
+			}
 		}
 		return bound;
 	}

@@ -13,20 +13,6 @@ MainLevel::MainLevel(ty::Application* app)
 	AddEntity(ty::EntitySharedRef(new PipeGenerator(this)));
 	AddEntity(ty::EntitySharedRef(new Land(this)));
 	m_background_rep.setTexture(*GetBackground().getTexture());
-
-	//debug
-	ty::EntitySharedRef pipeTop(new Pipe(this));
-	pipeTop->SetPosition(sf::Vector2f(768/2, 1024/2));
-	//pipeTop->Move(sf::Vector2f(69/2, 0.f));
-	pipeTop->SetRelativeOrigin(sf::Vector2f(69/2,0.f));
-	
-	AddEntity(pipeTop);
-	pipeTest = pipeTop.get();
-
-	ty::EntitySharedRef pipeBtm(new Pipe(this));
-	pipeBtm->Move(sf::Vector2f(0.f, app->GetWindow()->getSize().y - 368));
-	//AddEntity(pipeBtm);
-
 }
 
 void MainLevel::Tick(float DeltaTime)
@@ -38,23 +24,10 @@ void MainLevel::Tick(float DeltaTime)
 	{
 		GetBackground().setPosition(0, 0);
 	}
-
-	//debug
-	pipeTest->SetRotation(pipeTest->getRotation() + DeltaTime * 10.f);
 }
 
 void MainLevel::DrawBackground()
 {
 	Level::DrawBackground();
 	GetApp()->GetWindow()->draw(m_background_rep);
-
-	//debug:
-	sf::Sprite line;
-	line.setTexture(GetApp()->LoadTexture("verticalLine.png"));
-	line.setPosition(768/2, 0.f);
-	sf::Sprite line2;
-	line2.setTexture(GetApp()->LoadTexture("horiontalLine.png"));
-	line2.setPosition(0.f, 1024 / 2);
-	GetApp()->GetWindow()->draw(line);
-	GetApp()->GetWindow()->draw(line2);
 }

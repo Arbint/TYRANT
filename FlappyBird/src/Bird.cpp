@@ -27,8 +27,8 @@ Bird::Bird(ty::Level* level)
 
 void Bird::Tick(float DeltaTime)
 {
-	//Entity::Tick(DeltaTime);
-	SetRelativeOrigin(GetOrigin() + sf::Vector2f(10.f * DeltaTime, 0));
+	Entity::Tick(DeltaTime);
+	SetRelativeOrigin(GetRelativeOrigin() + sf::Vector2f(10.f * DeltaTime, 0));
 }
 
 void Bird::HandleInput()

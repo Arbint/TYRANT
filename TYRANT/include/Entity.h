@@ -29,7 +29,7 @@ namespace ty
 		virtual float getRotation() const { return m_rotation; }
 
 		virtual void SetRelativeOrigin(const sf::Vector2f& origin);
-		sf::Vector2f GetOrigin() const { return m_RelativeOrigin; }
+		sf::Vector2f GetRelativeOrigin() const { return m_RelativeOrigin; }
 		
 		sf::Transform GetTransform() const;
 

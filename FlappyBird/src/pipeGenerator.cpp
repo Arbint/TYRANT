@@ -7,7 +7,7 @@
 #include <iostream>
 PipeGenerator::PipeGenerator(ty::Level* level)
 	: Entity(level),
-	m_SpawnIntervalSeconds(5),
+	m_SpawnIntervalSeconds(1),
 	m_SpawnTimer(),
 	m_LevelInterval(5.f),
 	m_Gap(800.f),
@@ -37,19 +37,18 @@ void PipeGenerator::Tick(float DeltaTime)
 
 void PipeGenerator::SpawnPipes()
 {
-	/*
 	ty::EntitySharedRef TopPipe(new Pipe(GetLevel()));
 	ty::EntitySharedRef BtmPipe(new Pipe(GetLevel()));
 	GetLevel()->AddEntity(TopPipe);
 	GetLevel()->AddEntity(BtmPipe);
 	int PipeHeight = TopPipe->GetBound().height;
-	TopPipe->SetRelativeOrigin(sf::Vector2f(TopPipe->GetBound().width / 2, TopPipe->GetBound().height / 2));
-	BtmPipe->SetRelativeOrigin(TopPipe->GetOrigin());
+	int PipeWidth = TopPipe->GetBound().width;
+	TopPipe->SetRelativeOrigin(sf::Vector2f(PipeWidth/2, PipeHeight/2));
+	BtmPipe->SetRelativeOrigin(TopPipe->GetRelativeOrigin());
 	TopPipe->SetRotation(180);
-	float PipeStartXLocation = GetApp()->GetWindow()->getSize().x + TopPipe->GetBound().width/2;
+	float PipeStartXLocation = GetApp()->GetWindow()->getSize().x + PipeWidth/2;
 	float TopPipeYLocation = rand()%(PipeHeight/2);
 	float BtmPipeYLocation = TopPipeYLocation + m_Gap;
 	TopPipe->SetPosition(sf::Vector2f(PipeStartXLocation, TopPipeYLocation));
 	BtmPipe->SetPosition(sf::Vector2f(PipeStartXLocation, BtmPipeYLocation));
-	*/
 }

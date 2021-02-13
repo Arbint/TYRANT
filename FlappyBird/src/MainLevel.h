@@ -9,8 +9,5 @@ public:
 private:
 	float m_BackgroundMoveSpeed;
 	sf::Sprite m_background_rep;
-
-//debug:
-	class ty::Entity* pipeTest;
 };
 
