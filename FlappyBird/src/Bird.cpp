@@ -2,6 +2,11 @@
 #include <Application.h>
 #include <VisualComp.h>
 #include <PhysicsComp.h>
+#include <type_traits>
+#include <typeinfo>
+#include <typeindex>
+#include "Pipe.h"
+#include <TypeUtilities.h>
 Bird::Bird(ty::Level* level)
 	: Entity(level)
 {
@@ -43,31 +48,12 @@ void Bird::HandleInput()
 	{
 		m_PhysicsComp->SetVelocity(sf::Vector2f(0.f, -400.f));
 	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::D))
-	{
-		m_PhysicsComp->SetVelocity(sf::Vector2f( 200.f, 0.f));
-	}
-	if (sf::Keyboard::isKeyPressed(sf::Keyboard::A))
-	{
-		m_PhysicsComp->SetVelocity(sf::Vector2f(-200.f,0.f));
-	}
 }
 
 void Bird::Collided(ty::Entity* other)
 {
-	GetApp()->Pause();
-	sf::Clock flashTimer;
-	float FlashTime = 3.f;
-	sf::RectangleShape Flash;
-	sf::Color FlashColor(256, 256, 256, 0);
-	Flash.setSize(GetApp()->GetWindowSize());
-	while (flashTimer.getElapsedTime().asSeconds() < FlashTime)
+	if (ty::IsOfType<Pipe>(other))
 	{
-		GetApp()->HandleWindowEvents();
-		int FlashAlpha = (int)sin(flashTimer.getElapsedTime().asSeconds() * (3.14/2)/  FlashTime) * 255;
-		FlashColor.a = FlashAlpha;
-		Flash.setFillColor(FlashColor);
-		GetApp()->GetWindow()->draw(Flash);
-		GetApp()->GetWindow()->display();
+		GetApp()->Pause();
 	}
 }

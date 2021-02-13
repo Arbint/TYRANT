@@ -15,7 +15,6 @@ namespace ty
 					if (JBound.intersects(IBound))
 					{
 						m_RegisteredComponents[i]->InformCollisionEvent(m_RegisteredComponents[j]->GetOwner());
-						m_RegisteredComponents[j]->InformCollisionEvent(m_RegisteredComponents[i]->GetOwner());
 					}
 				}
 			}

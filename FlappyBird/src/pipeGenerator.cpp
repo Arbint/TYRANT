@@ -5,6 +5,7 @@
 #include <time.h>
 #include <Application.h>
 #include <iostream>
+#include "ScoreCounter.h"
 PipeGenerator::PipeGenerator(ty::Level* level)
 	: Entity(level),
 	m_SpawnIntervalSeconds(1),
@@ -51,4 +52,8 @@ void PipeGenerator::SpawnPipes()
 	float BtmPipeYLocation = TopPipeYLocation + m_Gap;
 	TopPipe->SetPosition(sf::Vector2f(PipeStartXLocation, TopPipeYLocation));
 	BtmPipe->SetPosition(sf::Vector2f(PipeStartXLocation, BtmPipeYLocation));
+	
+	ty::EntitySharedRef scoreCounter(new ScoreCounter(GetLevel()));
+	scoreCounter->SetPosition(sf::Vector2f(PipeStartXLocation, 0.f));
+	GetLevel()->AddEntity(scoreCounter);
 }

@@ -36,7 +36,7 @@ namespace ty
 
 		class Level* GetLevel();
 		class Application* GetApp() { return m_app; }
-		
+		const class Application* GetApp() const { return m_app; }
 		template<typename T>
 		typename std::enable_if<!std::is_base_of<VisualComp, T>::value, std::shared_ptr<T>>::type ConstructComponent()
 		
