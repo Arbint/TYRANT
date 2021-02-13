@@ -16,9 +16,8 @@ Pipe::Pipe(ty::Level* level)
 void Pipe::Tick(float DeltaTime)
 {
 	Entity::Tick(DeltaTime);
-	if (m_visualComp->GetVisual().getPosition().x <= 200)
+	if (GetPosition().x <= -m_visualComp->GetBound().width)
 	{
 		Destory();
 	}
-	
 }

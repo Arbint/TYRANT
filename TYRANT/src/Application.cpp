@@ -38,6 +38,10 @@ namespace ty
 				float DeltaTime = currentTime - previousFrameTime;
 				previousFrameTime = currentTime;
 				Tick(DeltaTime);
+				if (m_CurrentLevel)
+				{
+					m_CurrentLevel->PostTick();
+				}
 			}
 		}
 	}

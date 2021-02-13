@@ -29,7 +29,6 @@ namespace ty
 				m_Entities[i]->Tick(DeltaTime);
 			}
 		}
-		PostTick();
 	}
 
 	void Level::Draw()
@@ -68,17 +67,22 @@ namespace ty
 
 	void Level::PostTick()
 	{
+		KillPendingDestory();
+	}
+
+	void Level::KillPendingDestory()
+	{
 		for (int i = 0; i < m_PendingDestoryEntities.size(); i++)
 		{
 			for (int j = 0; j < m_Entities.size(); j++)
 			{
 				if (m_Entities[j].get() == m_PendingDestoryEntities[i])
 				{
-					m_Entities.erase(m_Entities.begin()+j);
+					m_Entities.erase(m_Entities.begin() + j);
 				}
 			}
 		}
-		std::cout << "entities left: " << m_Entities.size() << std::endl;
+		m_PendingDestoryEntities.clear();
 	}
 
 	void Level::AddEntity(EntitySharedRef newEntity)

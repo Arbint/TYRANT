@@ -16,6 +16,7 @@ namespace ty
 		virtual void DrawEntities();
 		virtual void HandleInput();
 		virtual void PostTick();
+		void KillPendingDestory();
 		sf::Sprite& GetBackground() { return m_Background; }
 		std::vector<EntitySharedRef>& GetEntities() { return m_Entities; }
 		void AddEntity(EntitySharedRef newEntity);
