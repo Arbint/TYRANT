@@ -11,8 +11,8 @@ Land::Land(ty::Level* level)
 
 	m_landOne->SetTexture("land.png");
 	m_landTwo->SetTexture("land.png");
-	m_landOne->SetZOrder(1);
-	m_landTwo->SetZOrder(1);
+	m_landOne->SetZOrder(2);
+	m_landTwo->SetZOrder(2);
 	m_MoveComp->SetVelocity(sf::Vector2f(-80.f, 0.f));
 	SetPosition(sf::Vector2f(0.f, GetApp()->GetWindow()->getSize().y - m_landOne->GetBound().height));
 	m_landTwo->SetLocalLocation(sf::Vector2f(m_landTwo->GetBound().width, 0.f));

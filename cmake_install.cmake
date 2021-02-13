@@ -1,4 +1,4 @@
-# Install script for directory: E:/Dev/TYRANT_Dev/TYRANT
+# Install script for directory: C:/dev/TyrantDev/TYRANT
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("E:/Dev/TYRANT_Dev/TYRANT/TYRANT/cmake_install.cmake")
+  include("C:/dev/TyrantDev/TYRANT/TYRANT/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
@@ -45,5 +45,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "E:/Dev/TYRANT_Dev/TYRANT/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "C:/dev/TyrantDev/TYRANT/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{6D0568AD-D8CB-3BF8-8A3B-B1FA6FCFD511}</ProjectGuid>
+    <ProjectGuid>{56C73E1C-389A-3BB4-BBAE-F09ADCE7927A}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
@@ -59,25 +59,25 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Dev\TYRANT_Dev\TYRANT\TYRANT\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TYRANT.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">TYRANT</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Dev\TYRANT_Dev\TYRANT\TYRANT\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TYRANT.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">TYRANT</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Dev\TYRANT_Dev\TYRANT\TYRANT\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TYRANT.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">TYRANT</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.dll</TargetExt>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Dev\TYRANT_Dev\TYRANT\TYRANT\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TYRANT.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">TYRANT</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.dll</TargetExt>
@@ -86,7 +86,7 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
@@ -101,10 +101,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;TYRANT_DLL_EXP;CMAKE_INTDIR=\"Debug\";TYRANT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -112,10 +112,9 @@
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>	</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_Dev/TYRANT/TYRANT/Debug E:/Dev/TYRANT_Dev/TYRANT/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/Debug C:/dev/TyrantDev/TYRANT/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -124,7 +123,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_Dev/TYRANT/TYRANT/vendor/sflm/lib/Debug E:/Dev/TYRANT_Dev/TYRANT/Debug
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/vendor/sflm/lib/Debug C:/dev/TyrantDev/TYRANT/Debug
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -139,8 +138,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/Dev/TYRANT_Dev/TYRANT/TYRANT/Debug/TYRANT.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/Dev/TYRANT_Dev/TYRANT/TYRANT/Debug/TYRANT.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/dev/TyrantDev/TYRANT/TYRANT/Debug/TYRANT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/TyrantDev/TYRANT/TYRANT/Debug/TYRANT.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -149,7 +148,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
@@ -164,10 +163,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TYRANT_DLL_EXP;CMAKE_INTDIR=\"Release\";TYRANT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -175,10 +174,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>	</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_Dev/TYRANT/TYRANT/Release E:/Dev/TYRANT_Dev/TYRANT/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/Release C:/dev/TyrantDev/TYRANT/Release
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -187,7 +185,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_Dev/TYRANT/TYRANT/vendor/sflm/lib/Release E:/Dev/TYRANT_Dev/TYRANT/Release
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/vendor/sflm/lib/Release C:/dev/TyrantDev/TYRANT/Release
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -202,8 +200,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/Dev/TYRANT_Dev/TYRANT/TYRANT/Release/TYRANT.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/Dev/TYRANT_Dev/TYRANT/TYRANT/Release/TYRANT.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/dev/TyrantDev/TYRANT/TYRANT/Release/TYRANT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/TyrantDev/TYRANT/TYRANT/Release/TYRANT.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -212,7 +210,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <ExceptionHandling>Sync</ExceptionHandling>
       <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
@@ -227,10 +225,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TYRANT_DLL_EXP;CMAKE_INTDIR=\"MinSizeRel\";TYRANT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -238,10 +236,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>	</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_Dev/TYRANT/TYRANT/MinSizeRel E:/Dev/TYRANT_Dev/TYRANT/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/MinSizeRel C:/dev/TyrantDev/TYRANT/MinSizeRel
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -250,7 +247,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_Dev/TYRANT/TYRANT/vendor/sflm/lib/MinSizeRel E:/Dev/TYRANT_Dev/TYRANT/MinSizeRel
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/vendor/sflm/lib/MinSizeRel C:/dev/TyrantDev/TYRANT/MinSizeRel
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -265,8 +262,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>false</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/Dev/TYRANT_Dev/TYRANT/TYRANT/MinSizeRel/TYRANT.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/Dev/TYRANT_Dev/TYRANT/TYRANT/MinSizeRel/TYRANT.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/dev/TyrantDev/TYRANT/TYRANT/MinSizeRel/TYRANT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/TyrantDev/TYRANT/TYRANT/MinSizeRel/TYRANT.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -275,7 +272,7 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <ExceptionHandling>Sync</ExceptionHandling>
@@ -289,10 +286,10 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;TYRANT_DLL_EXP;CMAKE_INTDIR=\"RelWithDebInfo\";TYRANT_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include;E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\dev\TyrantDev\TYRANT\TYRANT\include;C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -300,10 +297,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
     <PostBuildEvent>
-      <Message>
-      </Message>
+      <Message>	</Message>
       <Command>setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_Dev/TYRANT/TYRANT/RelWithDebInfo E:/Dev/TYRANT_Dev/TYRANT/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/RelWithDebInfo C:/dev/TyrantDev/TYRANT/RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -312,7 +308,7 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory E:/Dev/TYRANT_Dev/TYRANT/TYRANT/vendor/sflm/lib/RelWithDebInfo E:/Dev/TYRANT_Dev/TYRANT/RelWithDebInfo
+"C:\Program Files\CMake\bin\cmake.exe" -E copy_directory C:/dev/TyrantDev/TYRANT/TYRANT/vendor/sflm/lib/RelWithDebInfo C:/dev/TyrantDev/TYRANT/RelWithDebInfo
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -327,8 +323,8 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
-      <ImportLibrary>E:/Dev/TYRANT_Dev/TYRANT/TYRANT/RelWithDebInfo/TYRANT.lib</ImportLibrary>
-      <ProgramDataBaseFile>E:/Dev/TYRANT_Dev/TYRANT/TYRANT/RelWithDebInfo/TYRANT.pdb</ProgramDataBaseFile>
+      <ImportLibrary>C:/dev/TyrantDev/TYRANT/TYRANT/RelWithDebInfo/TYRANT.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/dev/TyrantDev/TYRANT/TYRANT/RelWithDebInfo/TYRANT.pdb</ProgramDataBaseFile>
       <SubSystem>Console</SubSystem>
     </Link>
     <ProjectReference>
@@ -336,10 +332,11 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeLists.txt">
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeLists.txt</Message>
+    <CustomBuild Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeLists.txt">
+      <StdOutEncoding>UTF-8</StdOutEncoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/dev/TyrantDev/TYRANT/TYRANT/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/Dev/TYRANT_Dev/TYRANT -BE:/Dev/TYRANT_Dev/TYRANT --check-stamp-file E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dev/TyrantDev/TYRANT -BC:/dev/TyrantDev/TYRANT --check-stamp-file C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -348,11 +345,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/dev/TyrantDev/TYRANT/TYRANT/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/Dev/TYRANT_Dev/TYRANT -BE:/Dev/TYRANT_Dev/TYRANT --check-stamp-file E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dev/TyrantDev/TYRANT -BC:/dev/TyrantDev/TYRANT --check-stamp-file C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -361,11 +358,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/dev/TyrantDev/TYRANT/TYRANT/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/Dev/TYRANT_Dev/TYRANT -BE:/Dev/TYRANT_Dev/TYRANT --check-stamp-file E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dev/TyrantDev/TYRANT -BC:/dev/TyrantDev/TYRANT --check-stamp-file C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -374,11 +371,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/dev/TyrantDev/TYRANT/TYRANT/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SE:/Dev/TYRANT_Dev/TYRANT -BE:/Dev/TYRANT_Dev/TYRANT --check-stamp-file E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/dev/TyrantDev/TYRANT -BC:/dev/TyrantDev/TYRANT --check-stamp-file C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/generate.stamp
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -387,218 +384,252 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\cmake_pch.cxx">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\cmake_pch.cxx">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Create</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
-    <ClCompile Include="src\MathUtility.cpp" />
-    <ClCompile Include="src\SpaceComp.cpp" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\Application.h" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\Entity.h" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\EntityComp.h" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\EntryPoint.h" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\Level.h" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\MovementComp.h" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\PhysicsComp.h" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\TyrantCore.h" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\VisualComp.h" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\typch.h" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\include\tyrant.h" />
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\Application.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Application.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Entity.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\EntityComp.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\EntryPoint.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\Level.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\MathUtility.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\MovementComp.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\PhysicsComp.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\SpaceComp.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\TyrantCore.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\VisualComp.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\typch.h" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\include\tyrant.h" />
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\Application.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\Entity.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\Entity.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\EntityComp.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\EntityComp.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\Level.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\Level.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\MovementComp.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\MathUtility.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\PhysicsComp.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\MovementComp.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\VisualComp.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\PhysicsComp.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
-    <ClCompile Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\src\tyrant.cpp">
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\SpaceComp.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
-      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
-      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">E:/Dev/TYRANT_Dev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
     </ClCompile>
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\Debug\cmake_pch.hxx" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\Release\cmake_pch.hxx" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\MinSizeRel\cmake_pch.hxx" />
-    <ClInclude Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\RelWithDebInfo\cmake_pch.hxx" />
-    <ClInclude Include="include\MathUtility.h" />
-    <ClInclude Include="include\SpaceComp.h" />
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\VisualComp.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClCompile Include="C:\dev\TyrantDev\TYRANT\TYRANT\src\tyrant.cpp">
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Debug/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Debug/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/Release/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/Release/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/MinSizeRel/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/MinSizeRel/cmake_pch.pch</PrecompiledHeaderOutputFile>
+      <ForcedIncludeFiles Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Use</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/CMakeFiles/TYRANT.dir/RelWithDebInfo/cmake_pch.hxx</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:/dev/TyrantDev/TYRANT/TYRANT/TYRANT.dir/RelWithDebInfo/cmake_pch.pch</PrecompiledHeaderOutputFile>
+    </ClCompile>
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\Debug\cmake_pch.hxx" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\Release\cmake_pch.hxx" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\MinSizeRel\cmake_pch.hxx" />
+    <ClInclude Include="C:\dev\TyrantDev\TYRANT\TYRANT\CMakeFiles\TYRANT.dir\RelWithDebInfo\cmake_pch.hxx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="E:\Dev\TYRANT_Dev\TYRANT\ZERO_CHECK.vcxproj">
-      <Project>{58E29647-DC7E-3DF8-819D-47839E2DFA86}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\ZERO_CHECK.vcxproj">
+      <Project>{111AA894-67C6-35F2-B30F-D23DFAA359B6}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </ProjectReference>
-    <ProjectReference Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\src\SFML\Audio\sfml-audio.vcxproj">
-      <Project>{090FDCF9-9A02-3A67-B952-BADDAEB27D64}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{EA9361F6-24FA-364F-884E-9C7B9F9ECA2B}</Project>
       <Name>sfml-audio</Name>
     </ProjectReference>
-    <ProjectReference Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\src\SFML\Graphics\sfml-graphics.vcxproj">
-      <Project>{428C8607-4585-318E-88A1-4AA8077F63B3}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{FA9CBFFE-648E-310F-944A-AD9925BDCE0C}</Project>
       <Name>sfml-graphics</Name>
     </ProjectReference>
-    <ProjectReference Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\src\SFML\Network\sfml-network.vcxproj">
-      <Project>{3603EC57-F6EB-3B0D-9AB9-71E3D0DDAEA7}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\src\SFML\Network\sfml-network.vcxproj">
+      <Project>{F817AB04-6282-390F-80EE-ED99B5737B17}</Project>
       <Name>sfml-network</Name>
     </ProjectReference>
-    <ProjectReference Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\src\SFML\System\sfml-system.vcxproj">
-      <Project>{1FC7EC6F-27FD-3B74-96B0-E64A3D36BA86}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\src\SFML\System\sfml-system.vcxproj">
+      <Project>{DEC020DF-8DCB-334A-A0F7-3D1589CDB655}</Project>
       <Name>sfml-system</Name>
     </ProjectReference>
-    <ProjectReference Include="E:\Dev\TYRANT_Dev\TYRANT\TYRANT\vendor\sflm\src\SFML\Window\sfml-window.vcxproj">
-      <Project>{B927D9D6-D40C-336E-9CF4-8EA6F42113A1}</Project>
+    <ProjectReference Include="C:\dev\TyrantDev\TYRANT\TYRANT\vendor\sflm\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{C74E15EA-864D-3DE2-B7C3-1522B97CFE8A}</Project>
       <Name>sfml-window</Name>
     </ProjectReference>
   </ItemGroup>

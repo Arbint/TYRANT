@@ -13,7 +13,7 @@ Bird::Bird(ty::Level* level)
 			sf::Vector2f(m_BirdVirsual->GetVisual().getGlobalBounds().width / 2,
 			m_BirdVirsual->GetVisual().getGlobalBounds().height / 2)
 		);
-		m_BirdVirsual->SetZOrder(2);
+		m_BirdVirsual->SetZOrder(1);
 	}
 
 	if (GetApp() && GetApp()->GetWindow())

@@ -52,30 +52,9 @@ namespace ty
 		m_Visual.setRotation(GetOwner()->getRotation() + GetLocalRotation());
 		m_Visual.setPosition(CalculateGlobalLocation());
 	}
-
-	bool operator>(const VisualComp& lhs, const VisualComp& rhs)
+	bool VisualCompSortingFunc(const std::shared_ptr<VisualComp>& lhs, const std::shared_ptr<VisualComp>& rhs)
 	{
-		return lhs.m_ZOrder > rhs.m_ZOrder;
-	}
-
-	bool operator>=(const VisualComp& lhs, const VisualComp& rhs)
-	{
-		return lhs.m_ZOrder >= rhs.m_ZOrder;
-	}
-
-	bool operator<=(const VisualComp& lhs, const VisualComp& rhs)
-	{
-		return lhs.m_ZOrder <= rhs.m_ZOrder;
-	}
-
-	bool operator<(const VisualComp& lhs, const VisualComp& rhs)
-	{
-		return lhs.m_ZOrder < rhs.m_ZOrder;
-	}
-
-	bool operator==(const VisualComp& lhs, const VisualComp& rhs)
-	{
-		return lhs.m_ZOrder == rhs.m_ZOrder;
+		return lhs->GetZOrder() < rhs->GetZOrder();
 	}
 }
 

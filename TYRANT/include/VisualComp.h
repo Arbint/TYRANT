@@ -8,6 +8,7 @@ namespace ty
 	public:
 		VisualComp(class Entity* Owner);
 		void SetZOrder(int order);
+		int GetZOrder() const { return m_ZOrder; }
 		void SetTexture(const std::string& TexDir);
 		void SetPosition(const sf::Vector2f& Pos);
 		void Move(const sf::Vector2f& MoveAmt);
@@ -20,15 +21,9 @@ namespace ty
 		const sf::Sprite& GetVisual() const { return m_Visual; }
 		sf::Sprite& GetVisual() { return m_Visual; }
 
-		//operators
-		friend bool operator>(const VisualComp& lhs, const VisualComp& rhs);
-		friend bool operator==(const VisualComp& lhs, const VisualComp& rhs);
-		friend bool operator<(const VisualComp& lhs, const VisualComp& rhs);
-		friend bool operator<=(const VisualComp& lhs, const VisualComp& rhs);
-		friend bool operator>=(const VisualComp& lhs, const VisualComp& rhs);
-
 	private:
 		sf::Sprite m_Visual;
 		int m_ZOrder;
 	};
+	bool VisualCompSortingFunc(const std::shared_ptr<VisualComp>& lhs, const std::shared_ptr<VisualComp>& rhs);
 }

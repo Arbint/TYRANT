@@ -48,9 +48,8 @@ namespace ty
 	void Level::DrawEntities()
 	{
 		std::vector<std::shared_ptr<VisualComp>> AllVisuals = GetAllDrawablesSorted();
-
 		for (int i = 0; i < AllVisuals.size(); ++i)
-		{
+		{		
 			GetApp()->GetWindow()->draw(AllVisuals[i]->GetVisual());
 		}
 	}
@@ -83,7 +82,7 @@ namespace ty
 			auto visualComps = m_Entities[i]->GetVisualComponents();
 			AllVisuals.insert(AllVisuals.end(), visualComps.begin(), visualComps.end());
 		}
-		std::sort(AllVisuals.begin(), AllVisuals.end());
+		std::sort(AllVisuals.begin(), AllVisuals.end(), VisualCompSortingFunc);
 		return AllVisuals;
 	}
 }
